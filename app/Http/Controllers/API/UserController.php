@@ -9,6 +9,7 @@ use Auth;
 use Activation;
 use App\Models\Role;
 use App\Models\User;
+use App\Models\UserProfile;
 use App\Mail\UserForgotPasswordMail;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\JsonResponse;
@@ -27,6 +28,8 @@ use App\Http\Requests\User\UserForgetPasswordRequest;
 use App\Http\Requests\User\UserResetPasswordRequest;
 use App\Http\Requests\User\UserChangePasswordRequest;
 use App\Http\Requests\User\UserActivateRequest;
+use App\Http\Requests\User\UserWithUserProfileRequest;
+use App\Http\Requests\User\OneUserWithUserProfileRequest;
 
 use League\Fractal\Pagination\IlluminatePaginatorAdapter;
 use League\Fractal\Serializer\JsonApiSerializer;
@@ -168,7 +171,7 @@ class UserController extends Controller {
         $role = ($request->has('role')) ? $request->role : 'subscriber';
         $this->attachRole($user, $role);
         $response = fractal($user, new UserTransformer())->toArray();
-        return response()->success($response);
+        return response()->success(['user_id' => $user->id]);
     }
 
     /**
@@ -228,6 +231,21 @@ class UserController extends Controller {
         $user->update();
         $response = fractal($user, new UserTransformer())->toArray();
         return response()->success($response);
+    }
+
+     /**
+     * Update a User Password by Admin
+     *
+     * This method allows an admin to reset a user's password without knowing the old password.
+     *
+     * @param int $userId The ID of the user whose password needs to be reset.
+     * @param string $newPassword The new password to set for the user.
+     * @return bool True if the password was successfully updated, false otherwise.
+     */
+    public function resetUserPassword(UserResetPasswordNoOldRequest $request, User $user, int $id): JsonResponse {
+        $user = User::find($id);
+        $user->password =$request->password;
+        return response()->success($user);
     }
 
     /**
@@ -331,6 +349,37 @@ class UserController extends Controller {
         } catch (\Exception $e) {
             return response()->error([], $e->getMessage());
         }
+    }
+
+      /**
+     * Get all UserProfile
+     *
+     * This endpoint lets users get data with User Profile
+     *
+     * @authenticated
+     *
+     * @param UserWithUserProfileRequest $request
+     * @return JsonResponse
+     */
+    public function showWithUserProfile(UserWithUserProfileRequest $request){
+        $usersWithProfiles = User::with('profile')->get();
+        return response()->success($usersWithProfiles);
+    }
+
+       /**
+     * Get One UserProfile
+     *
+     * This endpoint lets users get one data with User Profile
+     *
+     * @authenticated
+     *
+     * @param OneUserWithUserProfileRequest $request
+     * @param integer $userid
+     * @return JsonResponse
+     */
+    public function showOneWithUserProfile(OneUserWithUserProfileRequest $request, int $userid){
+        $usersWithProfiles = User::with('profile')->find($userid);
+        return response()->success($usersWithProfiles);
     }
 
 }

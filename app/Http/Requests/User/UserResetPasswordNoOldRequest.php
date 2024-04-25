@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Requests\Note;
+namespace App\Http\Requests\User;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
 
-class StoreNoteRequest extends FormRequest
+class UserResetPasswordNoOldRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -18,16 +18,13 @@ class StoreNoteRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array
+     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
      */
     public function rules(): array
     {
         return [
-            "userid"    => ["required","numeric"],
-            "title"     => ["required","string"],
-            "badge"     => ["nullable","string"],
-            "body"      => ["required","string"],
-            "date"      => ["required","date"],
+            "password"                  => ["required",  "min:8", "string"],
+            "v_password"                => ["required_with:password", "same:password", "min:8", "max:255"],    
         ];
     }
 }

@@ -45,8 +45,10 @@ Route::prefix('auth')
                 ->name('api.me');
             Route::post('logout', [LogoutController::class, 'logout'])
                 ->name('api.logout');
+                
         });
 });
+
 Route::prefix('user')
     ->middleware(['auth:api'])
     ->group(function () {
@@ -56,6 +58,10 @@ Route::prefix('user')
             ->name('user.store');
         Route::post('change', [UserController::class, 'changePassword'])
             ->name('user.password.change');
+        Route::get('/profile', [UserController::class, 'showWithUserProfile'])
+            ->name('profile.show');
+        Route::get('/profile/{id}', [UserController::class, 'showOneWithUserProfile'])
+            ->name('oneprofile.show');
         Route::prefix('{user}')->group(function () {
             Route::get('/', [UserController::class, 'show'])
                 ->name('user.show');
@@ -83,6 +89,7 @@ Route::prefix('user')
                 Route::delete('/', [UserPermissionController::class, 'destroy'])
                     ->name('user.permission.destroy');
             });
+ 
         });
     });
 
@@ -135,6 +142,7 @@ Route::prefix('media')
 Route::prefix('userprofile')
     ->middleware(['auth:api'])
     ->group(function () {
+        Route::get('/', [UserProfileController::class, 'index']);
         Route::post('/', [UserProfileController::class, 'store'])
             ->name('userprofile.store');
         Route::prefix('{userprofile}')->group(function () {

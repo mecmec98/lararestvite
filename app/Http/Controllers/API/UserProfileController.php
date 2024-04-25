@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\UserProfile;
 
 use App\Http\Requests\UserProfile\ShowUserProfileRequest;
+use App\Http\Requests\UserProfile\ShowAllUserProfileRequest;
 use App\Http\Requests\UserProfile\DeleteUserProfileRequest;
 use App\Http\Requests\UserProfile\UpdateUserProfileRequest;
 use App\Http\Requests\UserProfile\StoreUserProfileRequest;
@@ -19,7 +20,17 @@ use App\Http\Requests\UserProfile\StoreUserProfileRequest;
  */
 class UserProfileController extends Controller
 {
-    public function index($request) {
+
+     /**
+     * Show All User Profile
+     * 
+     * This endpoint allows you to show all user profiles
+     *
+     * @authenticated
+     * @param ShowAllUserProfileRequest $request
+     * @return void
+     */
+    public function index(ShowAllUserProfileRequest $request) {
         $profiles = UserProfile::all();
         return response()->success($profiles);
     }
@@ -37,7 +48,7 @@ class UserProfileController extends Controller
 
      public function show(ShowUserProfileRequest $request, int $userid) {
         $profile = new UserProfile;
-        $profile = UserProfile::where('user_id', $userid)->get();
+        $profile = UserProfile::where('user_id', $userid)->first();
         return response()->success($profile);
     }
 
@@ -58,6 +69,7 @@ class UserProfileController extends Controller
         $profile->firstname = $request->firstname;
         $profile->lastname = $request->lastname;
         $profile->middlename = $request->middlename;
+        $profile->position = $request->position;
         $profile->address = $request->address;
         $profile->birthday = $request->birthday;
         $profile->gender = $request->gender;
@@ -77,12 +89,14 @@ class UserProfileController extends Controller
      * @param integer $id
      * @return JsonResponse
      */
-    public function update(UpdateUserProfileRequest $request, int $id){
+    public function update(UpdateUserProfileRequest $request, int $userid){
         $profile = new UserProfile;
-        $profile = UserProfile::find($id);
+        $profile = UserProfile::where('user_id', $userid)->first();
+        
         $profile->firstname = $request->firstname;
         $profile->lastname = $request->lastname;
         $profile->middlename = $request->middlename;
+        $profile->position = $request->position;
         $profile->address = $request->address;
         $profile->birthday = $request->birthday;
         $profile->gender = $request->gender;
