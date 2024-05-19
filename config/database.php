@@ -35,6 +35,50 @@ return [
 
     'connections' => [
 
+        'usermanagementDB' => [
+        
+        ],
+
+        'inventoryDB' => [
+            'driver' => 'mysql',
+            'url' => env('DTABASE_URL'),
+            'host' => env('DB_HOST_INV'),
+            'port' => env('DB_PORT_INV'),
+            'database' => env('DB_DATABASE_INV'),
+            'username' => env('DB_USERNAME_INV'),
+            'password' => env('DB_PASSWORD_INV'),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => 'InnoDB',
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
+        'billingDB' => [
+            'driver' => 'mysql',
+            'url' => env('DATABASE_URL'),
+            'host' => env('DB_HOST_BILL', '127.0.0.1'),
+            'port' => env('DB_PORT_BILL', '3306'),
+            'database' => env('DB_DATABASE_BILL'),
+            'username' => env('DB_USERNAME_BILL'),
+            'password' => env('DB_PASSWORD_BILL'),
+            'unix_socket' => env('DB_SOCKET', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => 'InnoDB',
+            'options' => extension_loaded('pdo_mysql') ? array_filter([
+                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
+            ]) : [],
+        ],
+
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DATABASE_URL'),
