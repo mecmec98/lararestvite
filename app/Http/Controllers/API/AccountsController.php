@@ -6,11 +6,11 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Accounts;
 
-use App\Http\Request\Accounts\ShowAllAccountsRequest;
-use App\Http\Request\Accounts\ShowAccountRequest;
-use App\Http\Request\Accounts\StoreAccountRequest;
-use App\Http\Request\Accounts\UpdateAccountRequest;
-use App\Http\Request\Accounts\DeleteAccountRequest;
+use App\Http\Requests\Accounts\ShowAllAccountsRequest;
+use App\Http\Requests\Accounts\ShowAccountRequest;
+use App\Http\Requests\Accounts\StoreAccountRequest;
+use App\Http\Requests\Accounts\UpdateAccountRequest;
+use App\Http\Requests\Accounts\DeleteAccountRequest;
 
 
 
