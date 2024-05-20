@@ -7,6 +7,13 @@ use Illuminate\Http\Request;
 use App\Models\Accounts;
 
 use App\Http\Request\Accounts\ShowAllAccountsRequest;
+use App\Http\Request\Accounts\ShowAccountRequest;
+use App\Http\Request\Accounts\StoreAccountRequest;
+use App\Http\Request\Accounts\UpdateAccountRequest;
+use App\Http\Request\Accounts\DeleteAccountRequest;
+
+
+
 /**
  * @group Accounts Management
  *
@@ -21,7 +28,7 @@ class AccountsController extends Controller
      *
      * @authenticated
      * @param ShowAllAccountsRequest $request
-     * @return void
+     * @return JsonResponse
      */
     public function index(ShowAllAccountsRequest $request) {
         $accounts = Accounts::all();
@@ -35,7 +42,8 @@ class AccountsController extends Controller
      *
      * @authenticated
      * @param ShowAccountRequest $request
-     * @return void
+     * @param integer $accountid
+     * @return JsonResponse
      */
 
     public function show(ShowAccountRequest $request, int $accountid) {
@@ -51,7 +59,7 @@ class AccountsController extends Controller
      *
      * @authenticated
      * @param StoreAccountRequest $request
-     * @return void
+     * @return JsonResponse
      */
     public function store(StoreAccountRequest $request) {
         $accounts = new Accounts;
@@ -63,5 +71,41 @@ class AccountsController extends Controller
 
     }
 
+    /**
+     * Update an Account
+     * 
+     * This endpoint allows you to update an account
+     *
+     * @authenticated
+     * @param UpdateAccountRequest $request
+     * @param integer $accountid
+     * @return JsonResponse
+     */
+    public function update(UpdateAccountRequest $request, int $accountid) {
+        $accounts = new Accounts;
+        $accounts = Accounts::where('id', $accountid)->first();
+
+        $accounts->consumer_id = $request->consumerid;
+        $accounts->meter_id = $request->meterid;
+        $accounts->save();
+        return response()->success($accounts);
+    }
+
+      /**
+     * Delete an Account
+     * 
+     * This endpoint allows you to delete an account
+     *
+     * @authenticated
+     * @param DeleteAccountRequest $request
+     * @param integer $accountid
+     * @return JsonResponse
+     */
+    public function delete(DeleteAccountRequest $request, int $accountid) {
+        $accounts = new Accounts;
+        $accounts = Accounts::find($accountid);
+        $accounts->delete();
+        return response()->success('Account Deleted');
+    }
 
 }

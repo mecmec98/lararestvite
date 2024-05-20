@@ -22,6 +22,7 @@ use App\Http\Controllers\API\PermissionController;
 use App\Http\Controllers\API\MediaController;
 use App\Http\Controllers\API\UserProfileController;
 use App\Http\Controllers\API\NoteController;
+use App\Http\Controllers\API\AccountsController;
 
 Route::prefix('auth')
     ->middleware('throttle:60,1')
@@ -169,3 +170,19 @@ Route::prefix('note')
                 ->name('note.destroy');
             });
         });
+
+Route::prefix('accounts')
+    ->middleware(['auth:api'])
+    ->group(function () { 
+        Route::get('/', [AccountsController::class,'index']);
+        Route::post('/', [AccountsController::class, 'store'])
+            ->name('accounts.store');
+        Route::prefix('{accounts}')->group(function () {
+            Route::get('/', [AccountsController::class, 'show'])
+                ->name('accounts.show');
+            Route::put('/', [AccountsController::class, 'update'])
+                ->name('accounts.update');
+            Route::delete('/', [AccountsController::class, 'destroy'])
+                ->name('accounts.destroy');
+        });
+    });

@@ -105,6 +105,7 @@ class UserProfileController extends Controller
         $profile->save();
         return response()->success($profile);
     }
+    
      /**
      * Delete User Profile
      * 
