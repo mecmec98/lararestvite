@@ -101,7 +101,7 @@ class AccountsController extends Controller
      * @param integer $accountid
      * @return JsonResponse
      */
-    public function delete(DeleteAccountRequest $request, int $accountid) {
+    public function destroy(DeleteAccountRequest $request, int $accountid) {
         $accounts = new Accounts;
         $accounts = Accounts::find($accountid);
         $accounts->delete();
