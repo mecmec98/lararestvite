@@ -23,6 +23,7 @@ use App\Http\Controllers\API\MediaController;
 use App\Http\Controllers\API\UserProfileController;
 use App\Http\Controllers\API\NoteController;
 use App\Http\Controllers\API\AccountsController;
+use App\Http\Controllers\API\ConsumerProfileController;
 
 Route::prefix('auth')
     ->middleware('throttle:60,1')
@@ -184,5 +185,21 @@ Route::prefix('accounts')
                 ->name('accounts.update');
             Route::delete('/', [AccountsController::class, 'destroy'])
                 ->name('accounts.destroy');
+        });
+    });
+
+Route::prefix('consumers')
+    ->middleware(['auth:api'])
+    ->group(function (){
+        Route::get('/',[ConsumerProfileController::class,'index']);
+        Route::post('/',[ConsumerProfileController::class,'store'])
+            ->name('consumer.store');
+        Route::prefix('{consumers}')->group(function () {
+            Route::get('/',[ConsumerProfileController::class,'show'])
+                ->name('consumer.show');
+            Route::put('/',[ConsumerProfileController::class,'update'])
+                ->name('consumer.update');
+            Route::delete('/',[ConsumerProfileController::class,'delete'])
+                ->name('consumer.delete');
         });
     });

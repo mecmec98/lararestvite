@@ -91,7 +91,7 @@ class AccountsController extends Controller
         return response()->success($accounts);
     }
 
-      /**
+    /**
      * Delete an Account
      * 
      * This endpoint allows you to delete an account
