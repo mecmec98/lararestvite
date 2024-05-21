@@ -65,7 +65,8 @@ class AccountsController extends Controller
         $accounts = new Accounts;
         $accounts->consumer_id = $request->consumerid;
         $accounts->meter_id = $request->meterid;
-        $accounts->balance = $request->balance;
+        $accounts->discount_id = $request->discountid;
+        $accounts->rate_id = $request->rateid;
         $accounts->save();
         return response()->success($accounts);
 
@@ -87,6 +88,8 @@ class AccountsController extends Controller
 
         $accounts->consumer_id = $request->consumerid;
         $accounts->meter_id = $request->meterid;
+        $accounts->discount_id = $request->discountid;
+        $accounts->rate_id = $request->rateid;
         $accounts->save();
         return response()->success($accounts);
     }

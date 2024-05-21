@@ -11,6 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
+        Schema::connection('billingDB')->dropIfExists('consumer_profile');
+
         Schema::connection('billingDB')->create('consumer_profile', function (BluePrint $table) {
             $table->bigIncrements('id');
 

@@ -11,14 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::connection('billingDB')->dropIfExists('accounts');
-        Schema::connection('billingDB')->create('accounts', function (BluePrint $table) {
+        Schema::connection('billingDB')->dropIfExists('bills');
+        Schema::connection('billingDB')->create('bills', function (BluePrint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('consumer_id');
-            $table->unsignedBigInteger('meter_id');
-            $table->unsignedBigInteger('discount_id');
-            $table->unsignedBigInteger('rate_id');
-            
+            $table->unsignedBigInteger('account_id');
+            $table->foreign('account_id')->references('id')->on('accounts')->onDelete('CASCADE');
+            $table->unsignedBigInteger('meter_reading');  
+
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExist('accounts');
+        Schema::dropIfExists('bills');
     }
 };

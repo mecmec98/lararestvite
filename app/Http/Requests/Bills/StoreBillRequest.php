@@ -1,15 +1,14 @@
 <?php
 
-namespace App\Http\Requests\Accounts;
+namespace App\Http\Requests\Bills;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
 
-class StoreAccountRequest extends FormRequest
+class StoreBillRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
-     * @return bool
      */
     public function authorize(): bool
     {
@@ -19,15 +18,13 @@ class StoreAccountRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array
+     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
      */
     public function rules(): array
     {
         return [
-            "consumerid"       => ["required","numeric"],
-            "meterid"          => ["required","numeric"],
-            "discountid"       => ["nullable","numeric"],
-            "rateid"           => ["required","numeric"],
+            "accountid"         => ["required","numeric"],
+            "meterreading"      => ["required","numeric"],
         ];
     }
 }

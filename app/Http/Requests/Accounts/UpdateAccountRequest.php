@@ -24,8 +24,10 @@ class UpdateAccountRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "consumer_id"   =>["required","string"],
-            "meter_id"      =>["required","string"],
+            "consumerid"       => ["required","numeric"],
+            "meterid"          => ["required","numeric"],
+            "discountid"       => ["nullable","numeric"],
+            "rateid"           => ["required","numeric"],
         ];
     }
 }
