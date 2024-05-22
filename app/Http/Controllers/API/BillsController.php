@@ -50,6 +50,7 @@ class BillsController extends Controller
         $bills = Bills::where('id', $billid)->first();
         return response()->success($bills);
     }
+
     /**
      * Show All Bills via Accounts ID
      * 
@@ -96,6 +97,8 @@ class BillsController extends Controller
      */
     public function update(UpdateBillRequest $request, int $billid) {
         $bills = new Bills;
+        $bills = Bills::where('id', $billid)->first();
+        
         $bills->meter_reading = $request->meterreading;
         $bills->save();
         return response()->success($bills);

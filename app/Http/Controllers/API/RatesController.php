@@ -4,7 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Bills;
+use App\Models\Rates;
 
 use App\Http\Requests\Rates\ShowAllRatesRequest;
 use App\Http\Requests\Rates\ShowRateRequest;
@@ -13,9 +13,9 @@ use App\Http\Requests\Rates\UpdateRateRequest;
 use App\Http\Requests\Rates\DeleteRateRequest;
 
 /**
- * @group Bills Management
+ * @group Rates Management
  *
- * APIs for managing Bills
+ * APIs for managing Rate
  */
 class RatesController extends Controller
 {
@@ -79,6 +79,8 @@ class RatesController extends Controller
      */
     public function update(UpdateRateRequest $request, int $rateid) {
         $rates = new Rates;
+        $rates = Rates::where('id', $rateid)->first();
+
         $rates->rate_name = $request->ratename;
         $rates->rate_value = $request->ratevalue;
         $rates->rate_minimum = $request->rateminimum;

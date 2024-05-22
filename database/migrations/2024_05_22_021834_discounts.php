@@ -11,7 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::connection('billingDB')->dropIfExists('discounts');
+        Schema::connection('billingDB')->create('discounts', function (BluePrint $table) {
+            $table->bigIncrements('id');
+            $table->string('discount_name');
+            $table->decimal('discount_value');
+
+            $table->timestamps();
+        });
     }
 
     /**
@@ -19,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('discounts');
     }
 };
