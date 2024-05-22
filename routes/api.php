@@ -26,6 +26,7 @@ use App\Http\Controllers\API\AccountsController;
 use App\Http\Controllers\API\ConsumerProfileController;
 use App\Http\Controllers\API\BillsController;
 use App\Http\Controllers\API\RatesController;
+use App\Http\Controllers\API\DiscountsController;
 
 Route::prefix('auth')
     ->middleware('throttle:60,1')
@@ -238,5 +239,21 @@ Route::prefix('rates')
                 ->name('rates.update');
             Route::delete('/', [RatesController::class, 'destroy'])
                 ->name('rates.delete');
+        });
+    });
+
+Route::prefix('discounts')
+    ->middleware(['auth:api'])
+    ->group(function () {
+        Route::get('/',[DiscountsController::class, 'index']);
+        Route::post('/',[DiscountsController::class, 'store'])
+            ->name('discount.store');
+        Route::prefix('{discount}')->group(function () {
+            Route::get('/',[DiscountsController::class, 'show'])
+                ->name('discount.show');
+            Route::put('/',[DiscountsController::class,'update'])
+                ->name('discount.update');
+            Route::delete('/',[DiscountsController::class,'destroy'])
+                ->name('discount.delete');
         });
     });

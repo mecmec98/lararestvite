@@ -140,6 +140,28 @@
                             </li>
                                                                         </ul>
                             </ul>
+                    <ul id="tocify-header-discounts-management" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="discounts-management">
+                    <a href="#discounts-management">Discounts Management</a>
+                </li>
+                                    <ul id="tocify-subheader-discounts-management" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="discounts-management-GETapi-discounts">
+                                <a href="#discounts-management-GETapi-discounts">Show All Discounts</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="discounts-management-POSTapi-discounts">
+                                <a href="#discounts-management-POSTapi-discounts">Store a Discount</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="discounts-management-GETapi-discounts--discount-">
+                                <a href="#discounts-management-GETapi-discounts--discount-">Show One Discount via ID</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="discounts-management-PUTapi-discounts--discount-">
+                                <a href="#discounts-management-PUTapi-discounts--discount-">Update a Discount</a>
+                            </li>
+                                                                                <li class="tocify-item level-2" data-unique="discounts-management-DELETEapi-discounts--discount-">
+                                <a href="#discounts-management-DELETEapi-discounts--discount-">Delete a Discount</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
                     <ul id="tocify-header-media-management" class="tocify-header">
                 <li class="tocify-item level-1" data-unique="media-management">
                     <a href="#media-management">Media Management</a>
@@ -468,7 +490,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=rTnNMtyelVoJEohuftFBJXKJMhaJGpe2IcYtgn9F; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=sq9jGc3JZfam9IMboesBVk7SODXcbXa4OAaLdxZB; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -577,10 +599,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"consumerid\": 25456635.9527,
-    \"meterid\": 1743.812881,
-    \"discountid\": 8.24,
-    \"rateid\": 202.399506
+    \"consumerid\": 7103843.22,
+    \"meterid\": 413.7,
+    \"discountid\": 1.3340197,
+    \"rateid\": 2359.7766
 }"
 </code></pre></div>
 
@@ -597,10 +619,10 @@ const headers = {
 };
 
 let body = {
-    "consumerid": 25456635.9527,
-    "meterid": 1743.812881,
-    "discountid": 8.24,
-    "rateid": 202.399506
+    "consumerid": 7103843.22,
+    "meterid": 413.7,
+    "discountid": 1.3340197,
+    "rateid": 2359.7766
 };
 
 fetch(url, {
@@ -622,10 +644,10 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'consumerid' =&gt; 25456635.9527,
-            'meterid' =&gt; 1743.812881,
-            'discountid' =&gt; 8.24,
-            'rateid' =&gt; 202.399506,
+            'consumerid' =&gt; 7103843.22,
+            'meterid' =&gt; 413.7,
+            'discountid' =&gt; 1.3340197,
+            'rateid' =&gt; 2359.7766,
         ],
     ]
 );
@@ -639,10 +661,10 @@ import json
 
 url = 'http://127.0.0.1:8000/api/accounts'
 payload = {
-    "consumerid": 25456635.9527,
-    "meterid": 1743.812881,
-    "discountid": 8.24,
-    "rateid": 202.399506
+    "consumerid": 7103843.22,
+    "meterid": 413.7,
+    "discountid": 1.3340197,
+    "rateid": 2359.7766
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -666,7 +688,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=WQu2oAyQ4X21xNqpkSos6fjdSfB1piyJWMsmjxZ5; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=34PtFucpd0MOajHnIRq1KCW75RjRrgVYxGWw6odf; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -761,10 +783,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="consumerid"                data-endpoint="POSTapi-accounts"
-               value="25456635.9527"
+               value="7103843.22"
                data-component="body">
     <br>
-<p>Example: <code>25456635.9527</code></p>
+<p>Example: <code>7103843.22</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>meterid</code></b>&nbsp;&nbsp;
@@ -772,10 +794,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="meterid"                data-endpoint="POSTapi-accounts"
-               value="1743.812881"
+               value="413.7"
                data-component="body">
     <br>
-<p>Example: <code>1743.812881</code></p>
+<p>Example: <code>413.7</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>discountid</code></b>&nbsp;&nbsp;
@@ -783,10 +805,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="discountid"                data-endpoint="POSTapi-accounts"
-               value="8.24"
+               value="1.3340197"
                data-component="body">
     <br>
-<p>Example: <code>8.24</code></p>
+<p>Example: <code>1.3340197</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>rateid</code></b>&nbsp;&nbsp;
@@ -794,10 +816,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rateid"                data-endpoint="POSTapi-accounts"
-               value="202.399506"
+               value="2359.7766"
                data-component="body">
     <br>
-<p>Example: <code>202.399506</code></p>
+<p>Example: <code>2359.7766</code></p>
         </div>
         </form>
 
@@ -815,7 +837,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/accounts/eligendi" \
+    --get "http://127.0.0.1:8000/api/accounts/repudiandae" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -823,7 +845,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/accounts/eligendi"
+    "http://127.0.0.1:8000/api/accounts/repudiandae"
 );
 
 const headers = {
@@ -840,7 +862,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/accounts/eligendi';
+$url = 'http://127.0.0.1:8000/api/accounts/repudiandae';
 $response = $client-&gt;get(
     $url,
     [
@@ -859,7 +881,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/accounts/eligendi'
+url = 'http://127.0.0.1:8000/api/accounts/repudiandae'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -882,7 +904,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=LAymY9qvH7PK3AuQXenQFN2a2gB5dMNVUo0NeJnt; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=DXWuruFHpuP5CCybCLDchM2pmi9aH8lHt3VcCoAD; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -977,10 +999,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="accounts"                data-endpoint="GETapi-accounts--accounts-"
-               value="eligendi"
+               value="repudiandae"
                data-component="url">
     <br>
-<p>Example: <code>eligendi</code></p>
+<p>Example: <code>repudiandae</code></p>
             </div>
                     </form>
 
@@ -998,22 +1020,22 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://127.0.0.1:8000/api/accounts/iure" \
+    "http://127.0.0.1:8000/api/accounts/est" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"consumerid\": 14616.894,
-    \"meterid\": 0,
-    \"discountid\": 460595061.3,
-    \"rateid\": 338627.67868
+    \"consumerid\": 277.92,
+    \"meterid\": 3731138.7182115,
+    \"discountid\": 156.380580422,
+    \"rateid\": 44498731.4
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/accounts/iure"
+    "http://127.0.0.1:8000/api/accounts/est"
 );
 
 const headers = {
@@ -1023,10 +1045,10 @@ const headers = {
 };
 
 let body = {
-    "consumerid": 14616.894,
-    "meterid": 0,
-    "discountid": 460595061.3,
-    "rateid": 338627.67868
+    "consumerid": 277.92,
+    "meterid": 3731138.7182115,
+    "discountid": 156.380580422,
+    "rateid": 44498731.4
 };
 
 fetch(url, {
@@ -1038,7 +1060,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/accounts/iure';
+$url = 'http://127.0.0.1:8000/api/accounts/est';
 $response = $client-&gt;put(
     $url,
     [
@@ -1048,10 +1070,10 @@ $response = $client-&gt;put(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'consumerid' =&gt; 14616.894,
-            'meterid' =&gt; 0.0,
-            'discountid' =&gt; 460595061.3,
-            'rateid' =&gt; 338627.67868,
+            'consumerid' =&gt; 277.92,
+            'meterid' =&gt; 3731138.7182115,
+            'discountid' =&gt; 156.380580422,
+            'rateid' =&gt; 44498731.4,
         ],
     ]
 );
@@ -1063,12 +1085,12 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/accounts/iure'
+url = 'http://127.0.0.1:8000/api/accounts/est'
 payload = {
-    "consumerid": 14616.894,
-    "meterid": 0,
-    "discountid": 460595061.3,
-    "rateid": 338627.67868
+    "consumerid": 277.92,
+    "meterid": 3731138.7182115,
+    "discountid": 156.380580422,
+    "rateid": 44498731.4
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -1092,7 +1114,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=JJNcFZE2YvU9gqYD5rVv44m5Wk9mbwwa9LpA0zlY; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=AbIGQQWmYr7CpFyflhmuThH08053j2cXUY9Za6Tm; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -1187,10 +1209,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="accounts"                data-endpoint="PUTapi-accounts--accounts-"
-               value="iure"
+               value="est"
                data-component="url">
     <br>
-<p>Example: <code>iure</code></p>
+<p>Example: <code>est</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1199,10 +1221,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="consumerid"                data-endpoint="PUTapi-accounts--accounts-"
-               value="14616.894"
+               value="277.92"
                data-component="body">
     <br>
-<p>Example: <code>14616.894</code></p>
+<p>Example: <code>277.92</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>meterid</code></b>&nbsp;&nbsp;
@@ -1210,10 +1232,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="meterid"                data-endpoint="PUTapi-accounts--accounts-"
-               value="0"
+               value="3731138.7182115"
                data-component="body">
     <br>
-<p>Example: <code>0</code></p>
+<p>Example: <code>3731138.7182115</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>discountid</code></b>&nbsp;&nbsp;
@@ -1221,10 +1243,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="discountid"                data-endpoint="PUTapi-accounts--accounts-"
-               value="460595061.3"
+               value="156.380580422"
                data-component="body">
     <br>
-<p>Example: <code>460595061.3</code></p>
+<p>Example: <code>156.380580422</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>rateid</code></b>&nbsp;&nbsp;
@@ -1232,10 +1254,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rateid"                data-endpoint="PUTapi-accounts--accounts-"
-               value="338627.67868"
+               value="44498731.4"
                data-component="body">
     <br>
-<p>Example: <code>338627.67868</code></p>
+<p>Example: <code>44498731.4</code></p>
         </div>
         </form>
 
@@ -1253,7 +1275,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/api/accounts/error" \
+    "http://127.0.0.1:8000/api/accounts/repellendus" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -1261,7 +1283,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/accounts/error"
+    "http://127.0.0.1:8000/api/accounts/repellendus"
 );
 
 const headers = {
@@ -1278,7 +1300,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/accounts/error';
+$url = 'http://127.0.0.1:8000/api/accounts/repellendus';
 $response = $client-&gt;delete(
     $url,
     [
@@ -1297,7 +1319,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/accounts/error'
+url = 'http://127.0.0.1:8000/api/accounts/repellendus'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -1320,7 +1342,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=qDVE8NSnpYrA44KIVHF1JYr7QbZQ0YVpsLHPqR8c; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=JwsFij6YWcLVQfiqEEf8hY886RZ5hpRVxSlrG4ww; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -1415,10 +1437,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="accounts"                data-endpoint="DELETEapi-accounts--accounts-"
-               value="error"
+               value="repellendus"
                data-component="url">
     <br>
-<p>Example: <code>error</code></p>
+<p>Example: <code>repellendus</code></p>
             </div>
                     </form>
 
@@ -1507,7 +1529,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=7hiW0B1mzh4a7es9rvz2iD1PfyFECCKHYQtT4nsP; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=XEOgXtTX2MoCUnKYYBiau8jgLOv6IyA9uX2nSGnU; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -1616,8 +1638,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"accountid\": 61912.185806515,
-    \"meterreading\": 271246762.499823
+    \"accountid\": 761336.7,
+    \"meterreading\": 333844.428953
 }"
 </code></pre></div>
 
@@ -1634,8 +1656,8 @@ const headers = {
 };
 
 let body = {
-    "accountid": 61912.185806515,
-    "meterreading": 271246762.499823
+    "accountid": 761336.7,
+    "meterreading": 333844.428953
 };
 
 fetch(url, {
@@ -1657,8 +1679,8 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'accountid' =&gt; 61912.185806515,
-            'meterreading' =&gt; 271246762.499823,
+            'accountid' =&gt; 761336.7,
+            'meterreading' =&gt; 333844.428953,
         ],
     ]
 );
@@ -1672,8 +1694,8 @@ import json
 
 url = 'http://127.0.0.1:8000/api/bills'
 payload = {
-    "accountid": 61912.185806515,
-    "meterreading": 271246762.499823
+    "accountid": 761336.7,
+    "meterreading": 333844.428953
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -1697,7 +1719,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=bGfc4YSUOwA6z2pgEAtd3MXHIdgFKEoLhwexqItq; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=Y51QRKAY3kgwHKye5oCtrKhXPrsXqpw6eNAG3n5d; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -1792,10 +1814,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="accountid"                data-endpoint="POSTapi-bills"
-               value="61912.185806515"
+               value="761336.7"
                data-component="body">
     <br>
-<p>Example: <code>61912.185806515</code></p>
+<p>Example: <code>761336.7</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>meterreading</code></b>&nbsp;&nbsp;
@@ -1803,10 +1825,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="meterreading"                data-endpoint="POSTapi-bills"
-               value="271246762.49982"
+               value="333844.428953"
                data-component="body">
     <br>
-<p>Example: <code>271246762.49982</code></p>
+<p>Example: <code>333844.428953</code></p>
         </div>
         </form>
 
@@ -1824,7 +1846,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/bills/animi" \
+    --get "http://127.0.0.1:8000/api/bills/distinctio" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -1832,7 +1854,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/bills/animi"
+    "http://127.0.0.1:8000/api/bills/distinctio"
 );
 
 const headers = {
@@ -1849,7 +1871,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/bills/animi';
+$url = 'http://127.0.0.1:8000/api/bills/distinctio';
 $response = $client-&gt;get(
     $url,
     [
@@ -1868,7 +1890,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/bills/animi'
+url = 'http://127.0.0.1:8000/api/bills/distinctio'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -1891,7 +1913,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=sZ3eFgvtKU8gYkCVlUvt2aI4SuRumjwFNdcGOJpa; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=XlSkpinao7i7dQoxSoqjrb3bK1E8NG4shjlEOvKS; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -1986,10 +2008,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="bills"                data-endpoint="GETapi-bills--bills-"
-               value="animi"
+               value="distinctio"
                data-component="url">
     <br>
-<p>Example: <code>animi</code></p>
+<p>Example: <code>distinctio</code></p>
             </div>
                     </form>
 
@@ -2007,7 +2029,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/bills/aperiam/accounts" \
+    --get "http://127.0.0.1:8000/api/bills/officiis/accounts" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -2015,7 +2037,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/bills/aperiam/accounts"
+    "http://127.0.0.1:8000/api/bills/officiis/accounts"
 );
 
 const headers = {
@@ -2032,7 +2054,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/bills/aperiam/accounts';
+$url = 'http://127.0.0.1:8000/api/bills/officiis/accounts';
 $response = $client-&gt;get(
     $url,
     [
@@ -2051,7 +2073,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/bills/aperiam/accounts'
+url = 'http://127.0.0.1:8000/api/bills/officiis/accounts'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -2074,7 +2096,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=6pakBohTxq0p9hawhtzO2DQFNz2t0hcJnVDxaH5J; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=12RCkcjLMT9WTlDtyenZwUoqy2tZ50I03SH8J0uN; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -2169,10 +2191,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="bills"                data-endpoint="GETapi-bills--bills--accounts"
-               value="aperiam"
+               value="officiis"
                data-component="url">
     <br>
-<p>Example: <code>aperiam</code></p>
+<p>Example: <code>officiis</code></p>
             </div>
                     </form>
 
@@ -2190,20 +2212,20 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://127.0.0.1:8000/api/bills/aspernatur" \
+    "http://127.0.0.1:8000/api/bills/et" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"accountid\": 269678.81373017,
-    \"meterreading\": 0.925
+    \"accountid\": 489.264475313,
+    \"meterreading\": 56.0733185
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/bills/aspernatur"
+    "http://127.0.0.1:8000/api/bills/et"
 );
 
 const headers = {
@@ -2213,8 +2235,8 @@ const headers = {
 };
 
 let body = {
-    "accountid": 269678.81373017,
-    "meterreading": 0.925
+    "accountid": 489.264475313,
+    "meterreading": 56.0733185
 };
 
 fetch(url, {
@@ -2226,7 +2248,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/bills/aspernatur';
+$url = 'http://127.0.0.1:8000/api/bills/et';
 $response = $client-&gt;put(
     $url,
     [
@@ -2236,8 +2258,8 @@ $response = $client-&gt;put(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'accountid' =&gt; 269678.81373017,
-            'meterreading' =&gt; 0.925,
+            'accountid' =&gt; 489.264475313,
+            'meterreading' =&gt; 56.0733185,
         ],
     ]
 );
@@ -2249,10 +2271,10 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/bills/aspernatur'
+url = 'http://127.0.0.1:8000/api/bills/et'
 payload = {
-    "accountid": 269678.81373017,
-    "meterreading": 0.925
+    "accountid": 489.264475313,
+    "meterreading": 56.0733185
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -2276,7 +2298,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=z69yhi9nqoCRo9AVmo1s90215UeQ32heLn5ficMq; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=HTtyIErX0Zc1oAInj0biIdDMpMTBkaTzYnMAUwHy; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -2371,10 +2393,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="bills"                data-endpoint="PUTapi-bills--bills-"
-               value="aspernatur"
+               value="et"
                data-component="url">
     <br>
-<p>Example: <code>aspernatur</code></p>
+<p>Example: <code>et</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -2383,10 +2405,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="accountid"                data-endpoint="PUTapi-bills--bills-"
-               value="269678.81373017"
+               value="489.264475313"
                data-component="body">
     <br>
-<p>Example: <code>269678.81373017</code></p>
+<p>Example: <code>489.264475313</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>meterreading</code></b>&nbsp;&nbsp;
@@ -2394,10 +2416,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="meterreading"                data-endpoint="PUTapi-bills--bills-"
-               value="0.925"
+               value="56.0733185"
                data-component="body">
     <br>
-<p>Example: <code>0.925</code></p>
+<p>Example: <code>56.0733185</code></p>
         </div>
         </form>
 
@@ -2415,7 +2437,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/api/bills/rerum" \
+    "http://127.0.0.1:8000/api/bills/deserunt" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -2423,7 +2445,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/bills/rerum"
+    "http://127.0.0.1:8000/api/bills/deserunt"
 );
 
 const headers = {
@@ -2440,7 +2462,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/bills/rerum';
+$url = 'http://127.0.0.1:8000/api/bills/deserunt';
 $response = $client-&gt;delete(
     $url,
     [
@@ -2459,7 +2481,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/bills/rerum'
+url = 'http://127.0.0.1:8000/api/bills/deserunt'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -2482,7 +2504,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=3CJGBHanVHxAEpTIQdg2tAIBEqwenLYNOOxg2lqA; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=ePLANUkB2HhIn6EMqZbgGQw28ir3Pmz9ggjaPkmy; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -2577,10 +2599,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="bills"                data-endpoint="DELETEapi-bills--bills-"
-               value="rerum"
+               value="deserunt"
                data-component="url">
     <br>
-<p>Example: <code>rerum</code></p>
+<p>Example: <code>deserunt</code></p>
             </div>
                     </form>
 
@@ -2669,7 +2691,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=UrEHX2xK0xbqig9SE3vOOd6Q4QaNR5YF0Nllxs3D; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=ewa7bqq1sDFuWKVMUU3pqoRKjshx6NskHCYbvLn9; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -2778,11 +2800,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"firstname\": \"et\",
+    \"firstname\": \"laboriosam\",
     \"middlename\": \"et\",
-    \"lastname\": \"quisquam\",
-    \"address\": \"dolor\",
-    \"phonenumber\": \"dolores\"
+    \"lastname\": \"omnis\",
+    \"address\": \"voluptatem\",
+    \"phonenumber\": \"corporis\"
 }"
 </code></pre></div>
 
@@ -2799,11 +2821,11 @@ const headers = {
 };
 
 let body = {
-    "firstname": "et",
+    "firstname": "laboriosam",
     "middlename": "et",
-    "lastname": "quisquam",
-    "address": "dolor",
-    "phonenumber": "dolores"
+    "lastname": "omnis",
+    "address": "voluptatem",
+    "phonenumber": "corporis"
 };
 
 fetch(url, {
@@ -2825,11 +2847,11 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'firstname' =&gt; 'et',
+            'firstname' =&gt; 'laboriosam',
             'middlename' =&gt; 'et',
-            'lastname' =&gt; 'quisquam',
-            'address' =&gt; 'dolor',
-            'phonenumber' =&gt; 'dolores',
+            'lastname' =&gt; 'omnis',
+            'address' =&gt; 'voluptatem',
+            'phonenumber' =&gt; 'corporis',
         ],
     ]
 );
@@ -2843,11 +2865,11 @@ import json
 
 url = 'http://127.0.0.1:8000/api/consumers'
 payload = {
-    "firstname": "et",
+    "firstname": "laboriosam",
     "middlename": "et",
-    "lastname": "quisquam",
-    "address": "dolor",
-    "phonenumber": "dolores"
+    "lastname": "omnis",
+    "address": "voluptatem",
+    "phonenumber": "corporis"
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -2871,7 +2893,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=A9SvNra65j9sGSotkVbloYr4oC1szyimJFcEvgEI; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=efkmVxSABB8B7bbp9nJ0GmehNho88ir9CpbT88op; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -2966,10 +2988,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="firstname"                data-endpoint="POSTapi-consumers"
-               value="et"
+               value="laboriosam"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>laboriosam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>middlename</code></b>&nbsp;&nbsp;
@@ -2988,10 +3010,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="lastname"                data-endpoint="POSTapi-consumers"
-               value="quisquam"
+               value="omnis"
                data-component="body">
     <br>
-<p>Example: <code>quisquam</code></p>
+<p>Example: <code>omnis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -2999,10 +3021,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-consumers"
-               value="dolor"
+               value="voluptatem"
                data-component="body">
     <br>
-<p>Example: <code>dolor</code></p>
+<p>Example: <code>voluptatem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phonenumber</code></b>&nbsp;&nbsp;
@@ -3010,10 +3032,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="phonenumber"                data-endpoint="POSTapi-consumers"
-               value="dolores"
+               value="corporis"
                data-component="body">
     <br>
-<p>Example: <code>dolores</code></p>
+<p>Example: <code>corporis</code></p>
         </div>
         </form>
 
@@ -3031,7 +3053,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/consumers/labore" \
+    --get "http://127.0.0.1:8000/api/consumers/est" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -3039,7 +3061,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/consumers/labore"
+    "http://127.0.0.1:8000/api/consumers/est"
 );
 
 const headers = {
@@ -3056,7 +3078,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/consumers/labore';
+$url = 'http://127.0.0.1:8000/api/consumers/est';
 $response = $client-&gt;get(
     $url,
     [
@@ -3075,7 +3097,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/consumers/labore'
+url = 'http://127.0.0.1:8000/api/consumers/est'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -3098,7 +3120,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=1W6ctuuaPR9ZzKA5qwX3odqeAlXE7mUgaplktEVy; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=AM2iBmIGjeS6JOHrRZFWLLdkEYJ4gfvvyztI6e18; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -3193,10 +3215,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="consumers"                data-endpoint="GETapi-consumers--consumers-"
-               value="labore"
+               value="est"
                data-component="url">
     <br>
-<p>Example: <code>labore</code></p>
+<p>Example: <code>est</code></p>
             </div>
                     </form>
 
@@ -3214,23 +3236,23 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://127.0.0.1:8000/api/consumers/perferendis" \
+    "http://127.0.0.1:8000/api/consumers/id" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"firstname\": \"sapiente\",
-    \"middlename\": \"saepe\",
-    \"lastname\": \"possimus\",
-    \"address\": \"et\",
-    \"phonenumber\": \"asperiores\"
+    \"firstname\": \"est\",
+    \"middlename\": \"voluptatem\",
+    \"lastname\": \"ab\",
+    \"address\": \"quod\",
+    \"phonenumber\": \"dolorum\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/consumers/perferendis"
+    "http://127.0.0.1:8000/api/consumers/id"
 );
 
 const headers = {
@@ -3240,11 +3262,11 @@ const headers = {
 };
 
 let body = {
-    "firstname": "sapiente",
-    "middlename": "saepe",
-    "lastname": "possimus",
-    "address": "et",
-    "phonenumber": "asperiores"
+    "firstname": "est",
+    "middlename": "voluptatem",
+    "lastname": "ab",
+    "address": "quod",
+    "phonenumber": "dolorum"
 };
 
 fetch(url, {
@@ -3256,7 +3278,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/consumers/perferendis';
+$url = 'http://127.0.0.1:8000/api/consumers/id';
 $response = $client-&gt;put(
     $url,
     [
@@ -3266,11 +3288,11 @@ $response = $client-&gt;put(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'firstname' =&gt; 'sapiente',
-            'middlename' =&gt; 'saepe',
-            'lastname' =&gt; 'possimus',
-            'address' =&gt; 'et',
-            'phonenumber' =&gt; 'asperiores',
+            'firstname' =&gt; 'est',
+            'middlename' =&gt; 'voluptatem',
+            'lastname' =&gt; 'ab',
+            'address' =&gt; 'quod',
+            'phonenumber' =&gt; 'dolorum',
         ],
     ]
 );
@@ -3282,13 +3304,13 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/consumers/perferendis'
+url = 'http://127.0.0.1:8000/api/consumers/id'
 payload = {
-    "firstname": "sapiente",
-    "middlename": "saepe",
-    "lastname": "possimus",
-    "address": "et",
-    "phonenumber": "asperiores"
+    "firstname": "est",
+    "middlename": "voluptatem",
+    "lastname": "ab",
+    "address": "quod",
+    "phonenumber": "dolorum"
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -3312,7 +3334,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=kdzlBqqmiUaqXqd02mwuMblDB1Q6nx6fltApCUzN; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=OllBeDRy03jaKYbJoVyFdsw1ou6JqRbnrbxNyOdf; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -3407,10 +3429,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="consumers"                data-endpoint="PUTapi-consumers--consumers-"
-               value="perferendis"
+               value="id"
                data-component="url">
     <br>
-<p>Example: <code>perferendis</code></p>
+<p>Example: <code>id</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -3419,10 +3441,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="firstname"                data-endpoint="PUTapi-consumers--consumers-"
-               value="sapiente"
+               value="est"
                data-component="body">
     <br>
-<p>Example: <code>sapiente</code></p>
+<p>Example: <code>est</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>middlename</code></b>&nbsp;&nbsp;
@@ -3430,10 +3452,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="middlename"                data-endpoint="PUTapi-consumers--consumers-"
-               value="saepe"
+               value="voluptatem"
                data-component="body">
     <br>
-<p>Example: <code>saepe</code></p>
+<p>Example: <code>voluptatem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>lastname</code></b>&nbsp;&nbsp;
@@ -3441,10 +3463,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="lastname"                data-endpoint="PUTapi-consumers--consumers-"
-               value="possimus"
+               value="ab"
                data-component="body">
     <br>
-<p>Example: <code>possimus</code></p>
+<p>Example: <code>ab</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -3452,10 +3474,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="PUTapi-consumers--consumers-"
-               value="et"
+               value="quod"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>quod</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phonenumber</code></b>&nbsp;&nbsp;
@@ -3463,10 +3485,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="phonenumber"                data-endpoint="PUTapi-consumers--consumers-"
-               value="asperiores"
+               value="dolorum"
                data-component="body">
     <br>
-<p>Example: <code>asperiores</code></p>
+<p>Example: <code>dolorum</code></p>
         </div>
         </form>
 
@@ -3484,7 +3506,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/api/consumers/quis" \
+    "http://127.0.0.1:8000/api/consumers/impedit" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -3492,7 +3514,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/consumers/quis"
+    "http://127.0.0.1:8000/api/consumers/impedit"
 );
 
 const headers = {
@@ -3509,7 +3531,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/consumers/quis';
+$url = 'http://127.0.0.1:8000/api/consumers/impedit';
 $response = $client-&gt;delete(
     $url,
     [
@@ -3528,7 +3550,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/consumers/quis'
+url = 'http://127.0.0.1:8000/api/consumers/impedit'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -3551,7 +3573,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=M21rfBC1QSxWdXmpFCiRWX1PAoCtYzakJcxFSh1o; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=9NgXNOpDV7O7D2qo0yrOyWa7uerHvdDqMHVA646D; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -3646,10 +3668,989 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="consumers"                data-endpoint="DELETEapi-consumers--consumers-"
-               value="quis"
+               value="impedit"
                data-component="url">
     <br>
-<p>Example: <code>quis</code></p>
+<p>Example: <code>impedit</code></p>
+            </div>
+                    </form>
+
+                <h1 id="discounts-management">Discounts Management</h1>
+
+    <p>APIs for managing Discounts</p>
+
+                                <h2 id="discounts-management-GETapi-discounts">Show All Discounts</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>This endpoint allows you to show all discounts</p>
+
+<span id="example-requests-GETapi-discounts">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://127.0.0.1:8000/api/discounts" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://127.0.0.1:8000/api/discounts"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'http://127.0.0.1:8000/api/discounts';
+$response = $client-&gt;get(
+    $url,
+    [
+        'headers' =&gt; [
+            'Authorization' =&gt; 'Bearer {YOUR_AUTH_KEY}',
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'http://127.0.0.1:8000/api/discounts'
+headers = {
+  'Authorization': 'Bearer {YOUR_AUTH_KEY}',
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('GET', url, headers=headers)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-discounts">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+set-cookie: laravel_restful_api_session=XXwtInVIkB73WShkcw4XqRpgkG7SzF21YOx1cZ8l; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-discounts" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-discounts"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-discounts"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-discounts" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-discounts">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-discounts" data-method="GET"
+      data-path="api/discounts"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-discounts', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-discounts"
+                    onclick="tryItOut('GETapi-discounts');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-discounts"
+                    onclick="cancelTryOut('GETapi-discounts');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-discounts"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/discounts</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-discounts"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-discounts"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-discounts"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                    <h2 id="discounts-management-POSTapi-discounts">Store a Discount</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>This endpoint allows you to store a discount</p>
+
+<span id="example-requests-POSTapi-discounts">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://127.0.0.1:8000/api/discounts" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"discountname\": \"quidem\",
+    \"discountvalue\": 22.7
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://127.0.0.1:8000/api/discounts"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "discountname": "quidem",
+    "discountvalue": 22.7
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'http://127.0.0.1:8000/api/discounts';
+$response = $client-&gt;post(
+    $url,
+    [
+        'headers' =&gt; [
+            'Authorization' =&gt; 'Bearer {YOUR_AUTH_KEY}',
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+        'json' =&gt; [
+            'discountname' =&gt; 'quidem',
+            'discountvalue' =&gt; 22.7,
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'http://127.0.0.1:8000/api/discounts'
+payload = {
+    "discountname": "quidem",
+    "discountvalue": 22.7
+}
+headers = {
+  'Authorization': 'Bearer {YOUR_AUTH_KEY}',
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('POST', url, headers=headers, json=payload)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-discounts">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+set-cookie: laravel_restful_api_session=nMOHVfNYRncaa4yOQCvWsV9mB5R8l9Ex0HUz3udk; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-POSTapi-discounts" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-discounts"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-discounts"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-discounts" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-discounts">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-discounts" data-method="POST"
+      data-path="api/discounts"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-discounts', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-discounts"
+                    onclick="tryItOut('POSTapi-discounts');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-discounts"
+                    onclick="cancelTryOut('POSTapi-discounts');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-discounts"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/discounts</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-discounts"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-discounts"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-discounts"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>discountname</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="discountname"                data-endpoint="POSTapi-discounts"
+               value="quidem"
+               data-component="body">
+    <br>
+<p>Example: <code>quidem</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>discountvalue</code></b>&nbsp;&nbsp;
+<small>number</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="discountvalue"                data-endpoint="POSTapi-discounts"
+               value="22.7"
+               data-component="body">
+    <br>
+<p>Example: <code>22.7</code></p>
+        </div>
+        </form>
+
+                    <h2 id="discounts-management-GETapi-discounts--discount-">Show One Discount via ID</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>This endpoint allows you to show a specific account by Discount id</p>
+
+<span id="example-requests-GETapi-discounts--discount-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://127.0.0.1:8000/api/discounts/voluptas" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://127.0.0.1:8000/api/discounts/voluptas"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'http://127.0.0.1:8000/api/discounts/voluptas';
+$response = $client-&gt;get(
+    $url,
+    [
+        'headers' =&gt; [
+            'Authorization' =&gt; 'Bearer {YOUR_AUTH_KEY}',
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'http://127.0.0.1:8000/api/discounts/voluptas'
+headers = {
+  'Authorization': 'Bearer {YOUR_AUTH_KEY}',
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('GET', url, headers=headers)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-discounts--discount-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+set-cookie: laravel_restful_api_session=itcustd4sAZz1YPFNooB1cfNjRRy4EXedynJh5xM; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-discounts--discount-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-discounts--discount-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-discounts--discount-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-discounts--discount-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-discounts--discount-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-discounts--discount-" data-method="GET"
+      data-path="api/discounts/{discount}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-discounts--discount-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-discounts--discount-"
+                    onclick="tryItOut('GETapi-discounts--discount-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-discounts--discount-"
+                    onclick="cancelTryOut('GETapi-discounts--discount-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-discounts--discount-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/discounts/{discount}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-discounts--discount-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-discounts--discount-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-discounts--discount-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>discount</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="discount"                data-endpoint="GETapi-discounts--discount-"
+               value="voluptas"
+               data-component="url">
+    <br>
+<p>The discount. Example: <code>voluptas</code></p>
+            </div>
+                    </form>
+
+                    <h2 id="discounts-management-PUTapi-discounts--discount-">Update a Discount</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>This endpoint allows you to update a discount</p>
+
+<span id="example-requests-PUTapi-discounts--discount-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://127.0.0.1:8000/api/discounts/voluptatem" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"discountname\": \"asperiores\",
+    \"discountvalue\": 210974.02746233
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://127.0.0.1:8000/api/discounts/voluptatem"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "discountname": "asperiores",
+    "discountvalue": 210974.02746233
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'http://127.0.0.1:8000/api/discounts/voluptatem';
+$response = $client-&gt;put(
+    $url,
+    [
+        'headers' =&gt; [
+            'Authorization' =&gt; 'Bearer {YOUR_AUTH_KEY}',
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+        'json' =&gt; [
+            'discountname' =&gt; 'asperiores',
+            'discountvalue' =&gt; 210974.02746233,
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'http://127.0.0.1:8000/api/discounts/voluptatem'
+payload = {
+    "discountname": "asperiores",
+    "discountvalue": 210974.02746233
+}
+headers = {
+  'Authorization': 'Bearer {YOUR_AUTH_KEY}',
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('PUT', url, headers=headers, json=payload)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-discounts--discount-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+set-cookie: laravel_restful_api_session=Zrx2Llv73ZzKTiw1h8m0WpMynMKzR7LaN181e1je; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-PUTapi-discounts--discount-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-discounts--discount-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-discounts--discount-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-discounts--discount-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-discounts--discount-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-discounts--discount-" data-method="PUT"
+      data-path="api/discounts/{discount}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-discounts--discount-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-discounts--discount-"
+                    onclick="tryItOut('PUTapi-discounts--discount-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-discounts--discount-"
+                    onclick="cancelTryOut('PUTapi-discounts--discount-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-discounts--discount-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/discounts/{discount}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="PUTapi-discounts--discount-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-discounts--discount-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-discounts--discount-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>discount</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="discount"                data-endpoint="PUTapi-discounts--discount-"
+               value="voluptatem"
+               data-component="url">
+    <br>
+<p>The discount. Example: <code>voluptatem</code></p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>discountname</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="discountname"                data-endpoint="PUTapi-discounts--discount-"
+               value="asperiores"
+               data-component="body">
+    <br>
+<p>Example: <code>asperiores</code></p>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>discountvalue</code></b>&nbsp;&nbsp;
+<small>number</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="discountvalue"                data-endpoint="PUTapi-discounts--discount-"
+               value="210974.02746233"
+               data-component="body">
+    <br>
+<p>Example: <code>210974.02746233</code></p>
+        </div>
+        </form>
+
+                    <h2 id="discounts-management-DELETEapi-discounts--discount-">Delete a Discount</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>This endpoint allows you to delete a discount</p>
+
+<span id="example-requests-DELETEapi-discounts--discount-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://127.0.0.1:8000/api/discounts/consequatur" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://127.0.0.1:8000/api/discounts/consequatur"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+
+<div class="php-example">
+    <pre><code class="language-php">$client = new \GuzzleHttp\Client();
+$url = 'http://127.0.0.1:8000/api/discounts/consequatur';
+$response = $client-&gt;delete(
+    $url,
+    [
+        'headers' =&gt; [
+            'Authorization' =&gt; 'Bearer {YOUR_AUTH_KEY}',
+            'Content-Type' =&gt; 'application/json',
+            'Accept' =&gt; 'application/json',
+        ],
+    ]
+);
+$body = $response-&gt;getBody();
+print_r(json_decode((string) $body));</code></pre></div>
+
+
+<div class="python-example">
+    <pre><code class="language-python">import requests
+import json
+
+url = 'http://127.0.0.1:8000/api/discounts/consequatur'
+headers = {
+  'Authorization': 'Bearer {YOUR_AUTH_KEY}',
+  'Content-Type': 'application/json',
+  'Accept': 'application/json'
+}
+
+response = requests.request('DELETE', url, headers=headers)
+response.json()</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-discounts--discount-">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+set-cookie: laravel_restful_api_session=MzRW30QU94ElGGZV6kPGlBgcdFBe0KkAdnMTO4ap; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-DELETEapi-discounts--discount-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-discounts--discount-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-discounts--discount-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-discounts--discount-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-discounts--discount-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-discounts--discount-" data-method="DELETE"
+      data-path="api/discounts/{discount}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-discounts--discount-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-discounts--discount-"
+                    onclick="tryItOut('DELETEapi-discounts--discount-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-discounts--discount-"
+                    onclick="cancelTryOut('DELETEapi-discounts--discount-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-discounts--discount-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/discounts/{discount}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-discounts--discount-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-discounts--discount-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-discounts--discount-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>discount</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="discount"                data-endpoint="DELETEapi-discounts--discount-"
+               value="consequatur"
+               data-component="url">
+    <br>
+<p>The discount. Example: <code>consequatur</code></p>
             </div>
                     </form>
 
@@ -3738,7 +4739,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=qbCfe1zRXVlAttPeNXM3QOZvzPcmo5TEprtsm2Ii; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=4HCF6qxastUV2XuO0KFvftDLxEw75z64yLQlQu8j; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -3846,10 +4847,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: multipart/form-data" \
     --header "Accept: application/json" \
-    --form "status=quisquam"\
-    --form "description=Ipsa optio adipisci ut aspernatur ut omnis voluptatem."\
-    --form "meta[is_dicom]=1"\
-    --form "file=@/tmp/phpSrHedI" </code></pre></div>
+    --form "status=voluptatem"\
+    --form "description=Ut tenetur error et a ut minus."\
+    --form "meta[is_dicom]="\
+    --form "file=@/tmp/phpJROONm" </code></pre></div>
 
 
 <div class="javascript-example">
@@ -3864,9 +4865,9 @@ const headers = {
 };
 
 const body = new FormData();
-body.append('status', 'quisquam');
-body.append('description', 'Ipsa optio adipisci ut aspernatur ut omnis voluptatem.');
-body.append('meta[is_dicom]', '1');
+body.append('status', 'voluptatem');
+body.append('description', 'Ut tenetur error et a ut minus.');
+body.append('meta[is_dicom]', '');
 body.append('file', document.querySelector('input[name="file"]').files[0]);
 
 fetch(url, {
@@ -3890,19 +4891,19 @@ $response = $client-&gt;post(
         'multipart' =&gt; [
             [
                 'name' =&gt; 'status',
-                'contents' =&gt; 'quisquam'
+                'contents' =&gt; 'voluptatem'
             ],
             [
                 'name' =&gt; 'description',
-                'contents' =&gt; 'Ipsa optio adipisci ut aspernatur ut omnis voluptatem.'
+                'contents' =&gt; 'Ut tenetur error et a ut minus.'
             ],
             [
                 'name' =&gt; 'meta[is_dicom]',
-                'contents' =&gt; '1'
+                'contents' =&gt; ''
             ],
             [
                 'name' =&gt; 'file',
-                'contents' =&gt; fopen('/tmp/phpSrHedI', 'r')
+                'contents' =&gt; fopen('/tmp/phpJROONm', 'r')
             ],
         ],
     ]
@@ -3917,15 +4918,15 @@ import json
 
 url = 'http://127.0.0.1:8000/api/media'
 files = {
-  'status': (None, 'quisquam'),
-  'description': (None, 'Ipsa optio adipisci ut aspernatur ut omnis voluptatem.'),
-  'meta[is_dicom]': (None, '1'),
-  'file': open('/tmp/phpSrHedI', 'rb')}
+  'status': (None, 'voluptatem'),
+  'description': (None, 'Ut tenetur error et a ut minus.'),
+  'meta[is_dicom]': (None, ''),
+  'file': open('/tmp/phpJROONm', 'rb')}
 payload = {
-    "status": "quisquam",
-    "description": "Ipsa optio adipisci ut aspernatur ut omnis voluptatem.",
+    "status": "voluptatem",
+    "description": "Ut tenetur error et a ut minus.",
     "meta": {
-        "is_dicom": true
+        "is_dicom": false
     }
 }
 headers = {
@@ -3950,7 +4951,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=W0XnXt8M5rwZpl0biv59QLSKT6OcsET66GAxLRnw; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=rNvTPEvEBXb90ZKY8VjgT9W13Ov2S52P47hydxta; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -4048,7 +5049,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
                value=""
                data-component="body">
     <br>
-<p>Must be a file. Example: <code>/tmp/phpSrHedI</code></p>
+<p>Must be a file. Example: <code>/tmp/phpJROONm</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -4056,10 +5057,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="status"                data-endpoint="POSTapi-media"
-               value="quisquam"
+               value="voluptatem"
                data-component="body">
     <br>
-<p>Example: <code>quisquam</code></p>
+<p>Example: <code>voluptatem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -4067,10 +5068,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="description"                data-endpoint="POSTapi-media"
-               value="Ipsa optio adipisci ut aspernatur ut omnis voluptatem."
+               value="Ut tenetur error et a ut minus."
                data-component="body">
     <br>
-<p>Example: <code>Ipsa optio adipisci ut aspernatur ut omnis voluptatem.</code></p>
+<p>Example: <code>Ut tenetur error et a ut minus.</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
         <details>
@@ -4100,7 +5101,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
                     </div>
                                     </details>
         </div>
@@ -4187,7 +5188,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=ckUQUAAD6j2RRo5r4853T54raIIVYaKwQxqKqmwO; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=BNIXo6rImEsSVe7PmzuEjiC5XUd1hsUTsoqGIKbY; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -4371,7 +5372,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=gUzTSRG0SpYpUrkvzY2wpyLaMun3lZU0AELo9zX3; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=JDiE5R16Gm8bcZbnK485RR6cXdXPwYUzMhXtGdJR; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -4554,7 +5555,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=OeTjwEY4sWkL1C8r0v6LgdYfhazh4b3QuqmUUpRu; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=7r7YIL1rzNmoFAqaeD9ZMP0uXkdI2dmKrIylCKjP; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -4732,7 +5733,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=u1aZqko05iC9X6CqQx3dnMHe1hL9Jar1xXkx73bY; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=TZ9bFOtHTDknUUEpU87Ozlm2G6ntJ6UCpIVg6jnV; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -4908,7 +5909,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=KsyRjXwyPkQg5MkOE1LqNspS2AC9HiWQ1XkZZLKC; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=d53uvgBXUJZB6NF8SWSs8re974cRpCSUBy2b3oce; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -5083,7 +6084,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=rcsYxIiQCBIsJcLWxqS1VukdnKV2FsZSJOVAb71Z; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=xjINgnvoV6s9PfWHflATHYUiuAt6XbVQ68sMkPQl; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -5192,9 +6193,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"ratename\": \"doloremque\",
-    \"ratevalue\": 1642.063836,
-    \"rateminimum\": 42940989.87360416
+    \"ratename\": \"beatae\",
+    \"ratevalue\": 322152.8727042,
+    \"rateminimum\": 412.87
 }"
 </code></pre></div>
 
@@ -5211,9 +6212,9 @@ const headers = {
 };
 
 let body = {
-    "ratename": "doloremque",
-    "ratevalue": 1642.063836,
-    "rateminimum": 42940989.87360416
+    "ratename": "beatae",
+    "ratevalue": 322152.8727042,
+    "rateminimum": 412.87
 };
 
 fetch(url, {
@@ -5235,9 +6236,9 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'ratename' =&gt; 'doloremque',
-            'ratevalue' =&gt; 1642.063836,
-            'rateminimum' =&gt; 42940989.87360416,
+            'ratename' =&gt; 'beatae',
+            'ratevalue' =&gt; 322152.8727042,
+            'rateminimum' =&gt; 412.87,
         ],
     ]
 );
@@ -5251,9 +6252,9 @@ import json
 
 url = 'http://127.0.0.1:8000/api/rates'
 payload = {
-    "ratename": "doloremque",
-    "ratevalue": 1642.063836,
-    "rateminimum": 42940989.87360416
+    "ratename": "beatae",
+    "ratevalue": 322152.8727042,
+    "rateminimum": 412.87
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -5277,7 +6278,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=2RsBxGRBSsyMd6BvxT58c3niaDZmhiE3hrCfnWhj; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=6KD5VfhS0yVYz7N7I6Afnt66ZGSfTxWQBhdcnAwu; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -5372,10 +6373,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="ratename"                data-endpoint="POSTapi-rates"
-               value="doloremque"
+               value="beatae"
                data-component="body">
     <br>
-<p>Example: <code>doloremque</code></p>
+<p>Example: <code>beatae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>ratevalue</code></b>&nbsp;&nbsp;
@@ -5383,10 +6384,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="ratevalue"                data-endpoint="POSTapi-rates"
-               value="1642.063836"
+               value="322152.8727042"
                data-component="body">
     <br>
-<p>Example: <code>1642.063836</code></p>
+<p>Example: <code>322152.8727042</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>rateminimum</code></b>&nbsp;&nbsp;
@@ -5394,10 +6395,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rateminimum"                data-endpoint="POSTapi-rates"
-               value="42940989.873604"
+               value="412.87"
                data-component="body">
     <br>
-<p>Example: <code>42940989.873604</code></p>
+<p>Example: <code>412.87</code></p>
         </div>
         </form>
 
@@ -5415,7 +6416,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/rates/repellat" \
+    --get "http://127.0.0.1:8000/api/rates/sit" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -5423,7 +6424,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/rates/repellat"
+    "http://127.0.0.1:8000/api/rates/sit"
 );
 
 const headers = {
@@ -5440,7 +6441,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/rates/repellat';
+$url = 'http://127.0.0.1:8000/api/rates/sit';
 $response = $client-&gt;get(
     $url,
     [
@@ -5459,7 +6460,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/rates/repellat'
+url = 'http://127.0.0.1:8000/api/rates/sit'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -5482,7 +6483,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=JxyRjvAh524IwELEyWTaCIGQ1dyWJi2xeyE0Y53B; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=jdThcrMODwbKN2GTo0kHht3lsRlhSUGd5teiFGks; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -5577,10 +6578,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="rates"                data-endpoint="GETapi-rates--rates-"
-               value="repellat"
+               value="sit"
                data-component="url">
     <br>
-<p>Example: <code>repellat</code></p>
+<p>Example: <code>sit</code></p>
             </div>
                     </form>
 
@@ -5598,21 +6599,21 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://127.0.0.1:8000/api/rates/eaque" \
+    "http://127.0.0.1:8000/api/rates/aliquam" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"ratename\": \"expedita\",
-    \"ratevalue\": 11170.682789,
-    \"rateminimum\": 6233.16931
+    \"ratename\": \"voluptatem\",
+    \"ratevalue\": 55796964.583,
+    \"rateminimum\": 3010.55124
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/rates/eaque"
+    "http://127.0.0.1:8000/api/rates/aliquam"
 );
 
 const headers = {
@@ -5622,9 +6623,9 @@ const headers = {
 };
 
 let body = {
-    "ratename": "expedita",
-    "ratevalue": 11170.682789,
-    "rateminimum": 6233.16931
+    "ratename": "voluptatem",
+    "ratevalue": 55796964.583,
+    "rateminimum": 3010.55124
 };
 
 fetch(url, {
@@ -5636,7 +6637,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/rates/eaque';
+$url = 'http://127.0.0.1:8000/api/rates/aliquam';
 $response = $client-&gt;put(
     $url,
     [
@@ -5646,9 +6647,9 @@ $response = $client-&gt;put(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'ratename' =&gt; 'expedita',
-            'ratevalue' =&gt; 11170.682789,
-            'rateminimum' =&gt; 6233.16931,
+            'ratename' =&gt; 'voluptatem',
+            'ratevalue' =&gt; 55796964.583,
+            'rateminimum' =&gt; 3010.55124,
         ],
     ]
 );
@@ -5660,11 +6661,11 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/rates/eaque'
+url = 'http://127.0.0.1:8000/api/rates/aliquam'
 payload = {
-    "ratename": "expedita",
-    "ratevalue": 11170.682789,
-    "rateminimum": 6233.16931
+    "ratename": "voluptatem",
+    "ratevalue": 55796964.583,
+    "rateminimum": 3010.55124
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -5688,7 +6689,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=DAUvOJjUGIQaGlVWMI6If70Vbl29c4OOga2vzYPs; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=xPji6bXjImJR92glvu4XnO7tOpYn8rJ6SgyrL47R; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -5783,10 +6784,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="rates"                data-endpoint="PUTapi-rates--rates-"
-               value="eaque"
+               value="aliquam"
                data-component="url">
     <br>
-<p>Example: <code>eaque</code></p>
+<p>Example: <code>aliquam</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -5795,10 +6796,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="ratename"                data-endpoint="PUTapi-rates--rates-"
-               value="expedita"
+               value="voluptatem"
                data-component="body">
     <br>
-<p>Example: <code>expedita</code></p>
+<p>Example: <code>voluptatem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>ratevalue</code></b>&nbsp;&nbsp;
@@ -5806,10 +6807,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="ratevalue"                data-endpoint="PUTapi-rates--rates-"
-               value="11170.682789"
+               value="55796964.583"
                data-component="body">
     <br>
-<p>Example: <code>11170.682789</code></p>
+<p>Example: <code>55796964.583</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>rateminimum</code></b>&nbsp;&nbsp;
@@ -5817,10 +6818,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="rateminimum"                data-endpoint="PUTapi-rates--rates-"
-               value="6233.16931"
+               value="3010.55124"
                data-component="body">
     <br>
-<p>Example: <code>6233.16931</code></p>
+<p>Example: <code>3010.55124</code></p>
         </div>
         </form>
 
@@ -5838,7 +6839,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/api/rates/at" \
+    "http://127.0.0.1:8000/api/rates/illo" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -5846,7 +6847,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/rates/at"
+    "http://127.0.0.1:8000/api/rates/illo"
 );
 
 const headers = {
@@ -5863,7 +6864,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/rates/at';
+$url = 'http://127.0.0.1:8000/api/rates/illo';
 $response = $client-&gt;delete(
     $url,
     [
@@ -5882,7 +6883,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/rates/at'
+url = 'http://127.0.0.1:8000/api/rates/illo'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -5905,7 +6906,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=aDFfhqUfR3tbe8VQ5XHf0xnTwSKqxDwHccrj4ZVW; expires=Wed, 22 May 2024 04:24:36 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=H4Jh7VshtjDxI7kVegYBBpUS4hRczyFRF5NkZsvM; expires=Wed, 22 May 2024 09:58:54 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -6000,10 +7001,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="rates"                data-endpoint="DELETEapi-rates--rates-"
-               value="at"
+               value="illo"
                data-component="url">
     <br>
-<p>Example: <code>at</code></p>
+<p>Example: <code>illo</code></p>
             </div>
                     </form>
 
@@ -6092,7 +7093,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=NUWUW97uzPqzjf2h0ZHXEuWXMMmKrAQ8l6OsyK8o; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=E1IhINF6XYlnDCNX3eol726kol6ALSFbmGvftFWM; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -6201,8 +7202,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"autem\",
-    \"slug\": \"non\",
+    \"name\": \"voluptatibus\",
+    \"slug\": \"vitae\",
     \"permissions\": []
 }"
 </code></pre></div>
@@ -6220,8 +7221,8 @@ const headers = {
 };
 
 let body = {
-    "name": "autem",
-    "slug": "non",
+    "name": "voluptatibus",
+    "slug": "vitae",
     "permissions": []
 };
 
@@ -6244,8 +7245,8 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'name' =&gt; 'autem',
-            'slug' =&gt; 'non',
+            'name' =&gt; 'voluptatibus',
+            'slug' =&gt; 'vitae',
             'permissions' =&gt; [],
         ],
     ]
@@ -6260,8 +7261,8 @@ import json
 
 url = 'http://127.0.0.1:8000/api/role'
 payload = {
-    "name": "autem",
-    "slug": "non",
+    "name": "voluptatibus",
+    "slug": "vitae",
     "permissions": []
 }
 headers = {
@@ -6286,7 +7287,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=e3CMxEjqHWRzyjOgOE5hSJjD8AtIWHlnaVY0EGdW; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=TTGY4Zvwo9MLWJRgTkmMO8a9IvyMSrwMobr1cNzb; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -6381,10 +7382,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-role"
-               value="autem"
+               value="voluptatibus"
                data-component="body">
     <br>
-<p>Example: <code>autem</code></p>
+<p>Example: <code>voluptatibus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>slug</code></b>&nbsp;&nbsp;
@@ -6392,10 +7393,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="slug"                data-endpoint="POSTapi-role"
-               value="non"
+               value="vitae"
                data-component="body">
     <br>
-<p>Example: <code>non</code></p>
+<p>Example: <code>vitae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>permissions</code></b>&nbsp;&nbsp;
@@ -6491,7 +7492,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=c8zkr5Ew0W4vmGUVsTLRtawVyUPhWFcfp7cmyuWE; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=v0AProZnRMqpQc1k1z1hF1R9jSmnzGQ3wXahzk0W; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -6662,7 +7663,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=mtqW21DN78gAF6eunFZU4PI3Ftz4dhZfWpw8WWVw; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=hIWmxYygA29RifhEYoRFZGiZGBKeaCjKlB65VmPE; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -6845,7 +7846,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=IxWW8oF0r88eeA8IOIUEwZJFq2k4rTdBckm4Dx0N; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=qvBtIjyvixEYIRe9Hxyg7QT3uDY1BSMao7Gqgst1; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -7028,7 +8029,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=n8dk9GGUHE38jRADNviMAM4dxTykwbwcwYAjz7zo; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=IZpgxIkwGxC5vfftMOeTvaKMOR2aaqMXLqj8RqR5; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -7151,8 +8152,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"username\": \"if\",
-    \"password\": \"9M\\\"Bn)m[PX7k\\\".Wyb\"
+    \"username\": \"gwsxnxnekkq\",
+    \"password\": \"[Ms{_#\"
 }"
 </code></pre></div>
 
@@ -7168,8 +8169,8 @@ const headers = {
 };
 
 let body = {
-    "username": "if",
-    "password": "9M\"Bn)m[PX7k\".Wyb"
+    "username": "gwsxnxnekkq",
+    "password": "[Ms{_#"
 };
 
 fetch(url, {
@@ -7190,8 +8191,8 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'username' =&gt; 'if',
-            'password' =&gt; '9M"Bn)m[PX7k".Wyb',
+            'username' =&gt; 'gwsxnxnekkq',
+            'password' =&gt; '[Ms{_#',
         ],
     ]
 );
@@ -7205,8 +8206,8 @@ import json
 
 url = 'http://127.0.0.1:8000/api/auth/login'
 payload = {
-    "username": "if",
-    "password": "9M\"Bn)m[PX7k\".Wyb"
+    "username": "gwsxnxnekkq",
+    "password": "[Ms{_#"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -7220,7 +8221,7 @@ response.json()</code></pre></div>
 
 <span id="example-responses-POSTapi-auth-login">
             <blockquote>
-            <p>Example response (422):</p>
+            <p>Example response (401):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -7229,19 +8230,15 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 59
+x-ratelimit-remaining: 49
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=hSACZb1fICjh4Ogw4msqvsfOGrYS8ILRpMlZPnQL; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=E76vStTg5IKvAG3iVRAiMkzQsRqPCoSsd7tixadF; expires=Wed, 22 May 2024 09:58:52 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;state&quot;: &quot;error&quot;,
-    &quot;message&quot;: &quot;Data validation failed&quot;,
-    &quot;data&quot;: {
-        &quot;username&quot;: [
-            &quot;The username must be at least 5 characters.&quot;
-        ]
-    }
+    &quot;message&quot;: &quot;Username or Password is Incorrect&quot;,
+    &quot;data&quot;: []
 }</code>
  </pre>
     </span>
@@ -7321,10 +8318,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="username"                data-endpoint="POSTapi-auth-login"
-               value="if"
+               value="gwsxnxnekkq"
                data-component="body">
     <br>
-<p>Must be at least 5 characters. Must not be greater than 255 characters. Example: <code>if</code></p>
+<p>Must be at least 5 characters. Must not be greater than 255 characters. Example: <code>gwsxnxnekkq</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -7332,10 +8329,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-auth-login"
-               value="9M"Bn)m[PX7k".Wyb"
+               value="[Ms{_#"
                data-component="body">
     <br>
-<p>Must be at least 5 characters. Must not be greater than 255 characters. Example: <code>9M"Bn)m[PX7k".Wyb</code></p>
+<p>Must be at least 5 characters. Must not be greater than 255 characters. Example: <code>[Ms{_#</code></p>
         </div>
         </form>
 
@@ -7356,12 +8353,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"username\": \"bisex\",
-    \"email\": \"green.oran@example.org\",
-    \"password\": \"O\'\\/r0q5\\/,0X%GvRqDWtn\",
-    \"v_password\": \"udvffyap\",
-    \"role\": \"repellendus\",
-    \"activate\": false
+    \"username\": \"kzumlm\",
+    \"email\": \"julien.pfannerstill@example.com\",
+    \"password\": \"Bzx~2k\",
+    \"v_password\": \"vgzmzhlmlzsz\",
+    \"role\": \"nisi\",
+    \"activate\": true
 }"
 </code></pre></div>
 
@@ -7377,12 +8374,12 @@ const headers = {
 };
 
 let body = {
-    "username": "bisex",
-    "email": "green.oran@example.org",
-    "password": "O'\/r0q5\/,0X%GvRqDWtn",
-    "v_password": "udvffyap",
-    "role": "repellendus",
-    "activate": false
+    "username": "kzumlm",
+    "email": "julien.pfannerstill@example.com",
+    "password": "Bzx~2k",
+    "v_password": "vgzmzhlmlzsz",
+    "role": "nisi",
+    "activate": true
 };
 
 fetch(url, {
@@ -7403,12 +8400,12 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'username' =&gt; 'bisex',
-            'email' =&gt; 'green.oran@example.org',
-            'password' =&gt; 'O\'/r0q5/,0X%GvRqDWtn',
-            'v_password' =&gt; 'udvffyap',
-            'role' =&gt; 'repellendus',
-            'activate' =&gt; false,
+            'username' =&gt; 'kzumlm',
+            'email' =&gt; 'julien.pfannerstill@example.com',
+            'password' =&gt; 'Bzx~2k',
+            'v_password' =&gt; 'vgzmzhlmlzsz',
+            'role' =&gt; 'nisi',
+            'activate' =&gt; true,
         ],
     ]
 );
@@ -7422,12 +8419,12 @@ import json
 
 url = 'http://127.0.0.1:8000/api/auth/register'
 payload = {
-    "username": "bisex",
-    "email": "green.oran@example.org",
-    "password": "O'\/r0q5\/,0X%GvRqDWtn",
-    "v_password": "udvffyap",
-    "role": "repellendus",
-    "activate": false
+    "username": "kzumlm",
+    "email": "julien.pfannerstill@example.com",
+    "password": "Bzx~2k",
+    "v_password": "vgzmzhlmlzsz",
+    "role": "nisi",
+    "activate": true
 }
 headers = {
   'Content-Type': 'application/json',
@@ -7450,15 +8447,18 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 58
+x-ratelimit-remaining: 48
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=8grlQ9RQsB0071PaIltMUfZ9NNVAAeJOP0EkCPCz; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=sMXHtzp17dYQjp1FacnokkmRhJafiWUCN9pjFlxZ; expires=Wed, 22 May 2024 09:58:52 GMT; Max-Age=7199; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;state&quot;: &quot;error&quot;,
     &quot;message&quot;: &quot;Data validation failed&quot;,
     &quot;data&quot;: {
+        &quot;password&quot;: [
+            &quot;The password must be at least 8 characters.&quot;
+        ],
         &quot;v_password&quot;: [
             &quot;The v password and password must match.&quot;
         ]
@@ -7542,10 +8542,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="username"                data-endpoint="POSTapi-auth-register"
-               value="bisex"
+               value="kzumlm"
                data-component="body">
     <br>
-<p>Must be at least 5 characters. Must not be greater than 255 characters. Example: <code>bisex</code></p>
+<p>Must be at least 5 characters. Must not be greater than 255 characters. Example: <code>kzumlm</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -7553,10 +8553,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-auth-register"
-               value="green.oran@example.org"
+               value="julien.pfannerstill@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Must be at least 10 characters. Must not be greater than 255 characters. Example: <code>green.oran@example.org</code></p>
+<p>Must be a valid email address. Must be at least 10 characters. Must not be greater than 255 characters. Example: <code>julien.pfannerstill@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -7564,10 +8564,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-auth-register"
-               value="O'/r0q5/,0X%GvRqDWtn"
+               value="Bzx~2k"
                data-component="body">
     <br>
-<p>Must be at least 8 characters. Must not be greater than 255 characters. Example: <code>O'/r0q5/,0X%GvRqDWtn</code></p>
+<p>Must be at least 8 characters. Must not be greater than 255 characters. Example: <code>Bzx~2k</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>v_password</code></b>&nbsp;&nbsp;
@@ -7575,10 +8575,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="v_password"                data-endpoint="POSTapi-auth-register"
-               value="udvffyap"
+               value="vgzmzhlmlzsz"
                data-component="body">
     <br>
-<p>This field is required when <code>password</code> is present.  The value and <code>password</code> must match. Must be at least 8 characters. Must not be greater than 255 characters. Example: <code>udvffyap</code></p>
+<p>This field is required when <code>password</code> is present.  The value and <code>password</code> must match. Must be at least 8 characters. Must not be greater than 255 characters. Example: <code>vgzmzhlmlzsz</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -7586,10 +8586,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-auth-register"
-               value="repellendus"
+               value="nisi"
                data-component="body">
     <br>
-<p>Example: <code>repellendus</code></p>
+<p>Example: <code>nisi</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>permissions</code></b>&nbsp;&nbsp;
@@ -7621,7 +8621,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
         </div>
         </form>
 
@@ -7721,9 +8721,9 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 57
+x-ratelimit-remaining: 47
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=jfXnUVAXHlXpWrrTgmLlkpejtrYialVNBSIZ6yiL; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=xEKwYijqNGN1e5NHkfJ8kmsibRZp7yzdy4kxftln; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -8288,7 +9288,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"hamill.angelita@example.org\"
+    \"email\": \"gulgowski.fermin@example.com\"
 }"
 </code></pre></div>
 
@@ -8304,7 +9304,7 @@ const headers = {
 };
 
 let body = {
-    "email": "hamill.angelita@example.org"
+    "email": "gulgowski.fermin@example.com"
 };
 
 fetch(url, {
@@ -8325,7 +9325,7 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'email' =&gt; 'hamill.angelita@example.org',
+            'email' =&gt; 'gulgowski.fermin@example.com',
         ],
     ]
 );
@@ -8339,7 +9339,7 @@ import json
 
 url = 'http://127.0.0.1:8000/api/auth/password/forgot'
 payload = {
-    "email": "hamill.angelita@example.org"
+    "email": "gulgowski.fermin@example.com"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -8362,9 +9362,9 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 56
+x-ratelimit-remaining: 46
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=pSLPvZHnuJYvccEK0lT0Gb59DLV2BVz6IIXT3Ax5; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=W3HLazF46gqEOTuPBEa1fB6A0SHPmd0dy2Uh5lZV; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -8450,10 +9450,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-auth-password-forgot"
-               value="hamill.angelita@example.org"
+               value="gulgowski.fermin@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>hamill.angelita@example.org</code></p>
+<p>Must be a valid email address. Example: <code>gulgowski.fermin@example.com</code></p>
         </div>
         </form>
 
@@ -8474,9 +9474,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"password\": \"*7l,;%Gg(}b&gt;l\",
-    \"confirm_password\": \"dignissimos\",
-    \"token\": \"sunt\"
+    \"password\": \"lka&gt;4Ik3#UKd4&lt;w]:f`G\",
+    \"confirm_password\": \"explicabo\",
+    \"token\": \"quidem\"
 }"
 </code></pre></div>
 
@@ -8492,9 +9492,9 @@ const headers = {
 };
 
 let body = {
-    "password": "*7l,;%Gg(}b&gt;l",
-    "confirm_password": "dignissimos",
-    "token": "sunt"
+    "password": "lka&gt;4Ik3#UKd4&lt;w]:f`G",
+    "confirm_password": "explicabo",
+    "token": "quidem"
 };
 
 fetch(url, {
@@ -8515,9 +9515,9 @@ $response = $client-&gt;put(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'password' =&gt; '*7l,;%Gg(}b&gt;l',
-            'confirm_password' =&gt; 'dignissimos',
-            'token' =&gt; 'sunt',
+            'password' =&gt; 'lka&gt;4Ik3#UKd4&lt;w]:f`G',
+            'confirm_password' =&gt; 'explicabo',
+            'token' =&gt; 'quidem',
         ],
     ]
 );
@@ -8531,9 +9531,9 @@ import json
 
 url = 'http://127.0.0.1:8000/api/auth/password/reset'
 payload = {
-    "password": "*7l,;%Gg(}b&gt;l",
-    "confirm_password": "dignissimos",
-    "token": "sunt"
+    "password": "lka&gt;4Ik3#UKd4&lt;w]:f`G",
+    "confirm_password": "explicabo",
+    "token": "quidem"
 }
 headers = {
   'Content-Type': 'application/json',
@@ -8556,9 +9556,9 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 55
+x-ratelimit-remaining: 45
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=KuSl7NLq91SRw428GPxBfTIJHREQ9C9hW10BSMk6; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=LOPAh91FdDVmSwTV0Q1GWHdgdkdoTQCC5M6ORM0S; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -9088,10 +10088,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="PUTapi-auth-password-reset"
-               value="*7l,;%Gg(}b>l"
+               value="lka>4Ik3#UKd4<w]:f`G"
                data-component="body">
     <br>
-<p>Example: <code>*7l,;%Gg(}b&gt;l</code></p>
+<p>Example: <code>lka&gt;4Ik3#UKd4&lt;w]:f</code>G`</p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>confirm_password</code></b>&nbsp;&nbsp;
@@ -9099,10 +10099,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="confirm_password"                data-endpoint="PUTapi-auth-password-reset"
-               value="dignissimos"
+               value="explicabo"
                data-component="body">
     <br>
-<p>Example: <code>dignissimos</code></p>
+<p>Example: <code>explicabo</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>token</code></b>&nbsp;&nbsp;
@@ -9110,10 +10110,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="token"                data-endpoint="PUTapi-auth-password-reset"
-               value="sunt"
+               value="quidem"
                data-component="body">
     <br>
-<p>Example: <code>sunt</code></p>
+<p>Example: <code>quidem</code></p>
         </div>
         </form>
 
@@ -9198,7 +10198,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=CcfaJXVdAZBLgNAxRzX5FBgmVFnlVV1DOLiIebbJ; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=0ZSzaVucqXnAVCcTdr89dIpXqnX2zJ95rHrnOYi0; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -9364,7 +10364,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=dOvLHQqc3ccvEqwVLEw8hbYISmCAIWX8EutB0EIp; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=D6nLaaf3obxxzGwkD9OEQOoHfrhXtIAx2751rec5; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -9457,7 +10457,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/user?search=voluptatum&amp;role=qui" \
+    --get "http://127.0.0.1:8000/api/user?search=eos&amp;role=temporibus" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -9469,8 +10469,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
 );
 
 const params = {
-    "search": "voluptatum",
-    "role": "qui",
+    "search": "eos",
+    "role": "temporibus",
 };
 Object.keys(params)
     .forEach(key =&gt; url.searchParams.append(key, params[key]));
@@ -9499,8 +10499,8 @@ $response = $client-&gt;get(
             'Accept' =&gt; 'application/json',
         ],
         'query' =&gt; [
-            'search' =&gt; 'voluptatum',
-            'role' =&gt; 'qui',
+            'search' =&gt; 'eos',
+            'role' =&gt; 'temporibus',
         ],
     ]
 );
@@ -9514,8 +10514,8 @@ import json
 
 url = 'http://127.0.0.1:8000/api/user'
 params = {
-  'search': 'voluptatum',
-  'role': 'qui',
+  'search': 'eos',
+  'role': 'temporibus',
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -9539,7 +10539,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=PK6chZZuzpatasgAxiwQOoUD7WRkgaydL4jez6OI; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=J8qzPFK7N0POvh42hYviyrLyGCY3mHSTjpe5BuQW; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -9634,10 +10634,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="search"                data-endpoint="GETapi-user"
-               value="voluptatum"
+               value="eos"
                data-component="query">
     <br>
-<p>used to search from email, username Example: <code>voluptatum</code></p>
+<p>used to search from email, username Example: <code>eos</code></p>
             </div>
                                     <div style="padding-left: 28px; clear: unset;">
                 <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -9645,10 +10645,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="GETapi-user"
-               value="qui"
+               value="temporibus"
                data-component="query">
     <br>
-<p>used to filter results based on a specific role. Example: <code>qui</code></p>
+<p>used to filter results based on a specific role. Example: <code>temporibus</code></p>
             </div>
                 </form>
 
@@ -9671,12 +10671,12 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"username\": \"fkvzboxp\",
-    \"email\": \"derrick.runolfsson@example.org\",
-    \"password\": \"amg^PiZMd7\",
-    \"v_password\": \"ubexoma\",
-    \"role\": \"qui\",
-    \"activate\": true
+    \"username\": \"j\",
+    \"email\": \"rau.zachery@example.com\",
+    \"password\": \"C3[9m&gt;m!WmY^6\",
+    \"v_password\": \"sgqmhfhjzvcdeqtfelyq\",
+    \"role\": \"libero\",
+    \"activate\": false
 }"
 </code></pre></div>
 
@@ -9693,12 +10693,12 @@ const headers = {
 };
 
 let body = {
-    "username": "fkvzboxp",
-    "email": "derrick.runolfsson@example.org",
-    "password": "amg^PiZMd7",
-    "v_password": "ubexoma",
-    "role": "qui",
-    "activate": true
+    "username": "j",
+    "email": "rau.zachery@example.com",
+    "password": "C3[9m&gt;m!WmY^6",
+    "v_password": "sgqmhfhjzvcdeqtfelyq",
+    "role": "libero",
+    "activate": false
 };
 
 fetch(url, {
@@ -9720,12 +10720,12 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'username' =&gt; 'fkvzboxp',
-            'email' =&gt; 'derrick.runolfsson@example.org',
-            'password' =&gt; 'amg^PiZMd7',
-            'v_password' =&gt; 'ubexoma',
-            'role' =&gt; 'qui',
-            'activate' =&gt; true,
+            'username' =&gt; 'j',
+            'email' =&gt; 'rau.zachery@example.com',
+            'password' =&gt; 'C3[9m&gt;m!WmY^6',
+            'v_password' =&gt; 'sgqmhfhjzvcdeqtfelyq',
+            'role' =&gt; 'libero',
+            'activate' =&gt; false,
         ],
     ]
 );
@@ -9739,12 +10739,12 @@ import json
 
 url = 'http://127.0.0.1:8000/api/user'
 payload = {
-    "username": "fkvzboxp",
-    "email": "derrick.runolfsson@example.org",
-    "password": "amg^PiZMd7",
-    "v_password": "ubexoma",
-    "role": "qui",
-    "activate": true
+    "username": "j",
+    "email": "rau.zachery@example.com",
+    "password": "C3[9m&gt;m!WmY^6",
+    "v_password": "sgqmhfhjzvcdeqtfelyq",
+    "role": "libero",
+    "activate": false
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -9768,7 +10768,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=YuzvsFwTKhDqRnyVxDIy5lvIWC80HAGlwDjIVBIm; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=SXbLcjoRBqHLS9upXX7QOFGrXnpxw9R4loXndyIj; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -9863,10 +10863,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="username"                data-endpoint="POSTapi-user"
-               value="fkvzboxp"
+               value="j"
                data-component="body">
     <br>
-<p>Must be at least 2 characters. Must not be greater than 255 characters. Example: <code>fkvzboxp</code></p>
+<p>Must be at least 2 characters. Must not be greater than 255 characters. Example: <code>j</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -9874,10 +10874,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-user"
-               value="derrick.runolfsson@example.org"
+               value="rau.zachery@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>derrick.runolfsson@example.org</code></p>
+<p>Must be a valid email address. Example: <code>rau.zachery@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -9885,10 +10885,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-user"
-               value="amg^PiZMd7"
+               value="C3[9m>m!WmY^6"
                data-component="body">
     <br>
-<p>Must be at least 8 characters. Example: <code>amg^PiZMd7</code></p>
+<p>Must be at least 8 characters. Example: <code>C3[9m&gt;m!WmY^6</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>v_password</code></b>&nbsp;&nbsp;
@@ -9896,10 +10896,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="v_password"                data-endpoint="POSTapi-user"
-               value="ubexoma"
+               value="sgqmhfhjzvcdeqtfelyq"
                data-component="body">
     <br>
-<p>This field is required when <code>password</code> is present.  The value and <code>password</code> must match. Must be at least 8 characters. Must not be greater than 255 characters. Example: <code>ubexoma</code></p>
+<p>This field is required when <code>password</code> is present.  The value and <code>password</code> must match. Must be at least 8 characters. Must not be greater than 255 characters. Example: <code>sgqmhfhjzvcdeqtfelyq</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>role</code></b>&nbsp;&nbsp;
@@ -9907,10 +10907,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="role"                data-endpoint="POSTapi-user"
-               value="qui"
+               value="libero"
                data-component="body">
     <br>
-<p>Example: <code>qui</code></p>
+<p>Example: <code>libero</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>permissions</code></b>&nbsp;&nbsp;
@@ -9942,7 +10942,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
         </div>
         </form>
 
@@ -9965,9 +10965,9 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"password_current\": \"enim\",
-    \"password\": \"6uK@kKWl27L0Fvb3lt\",
-    \"password_confirmation\": \"abvckz\"
+    \"password_current\": \"rerum\",
+    \"password\": \"WyQ-BzF%M],\\/eYpUD;fG\",
+    \"password_confirmation\": \"lictgcnjpyocw\"
 }"
 </code></pre></div>
 
@@ -9984,9 +10984,9 @@ const headers = {
 };
 
 let body = {
-    "password_current": "enim",
-    "password": "6uK@kKWl27L0Fvb3lt",
-    "password_confirmation": "abvckz"
+    "password_current": "rerum",
+    "password": "WyQ-BzF%M],\/eYpUD;fG",
+    "password_confirmation": "lictgcnjpyocw"
 };
 
 fetch(url, {
@@ -10008,9 +11008,9 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'password_current' =&gt; 'enim',
-            'password' =&gt; '6uK@kKWl27L0Fvb3lt',
-            'password_confirmation' =&gt; 'abvckz',
+            'password_current' =&gt; 'rerum',
+            'password' =&gt; 'WyQ-BzF%M],/eYpUD;fG',
+            'password_confirmation' =&gt; 'lictgcnjpyocw',
         ],
     ]
 );
@@ -10024,9 +11024,9 @@ import json
 
 url = 'http://127.0.0.1:8000/api/user/change'
 payload = {
-    "password_current": "enim",
-    "password": "6uK@kKWl27L0Fvb3lt",
-    "password_confirmation": "abvckz"
+    "password_current": "rerum",
+    "password": "WyQ-BzF%M],\/eYpUD;fG",
+    "password_confirmation": "lictgcnjpyocw"
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -10050,7 +11050,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=vbmpAwzjsCbpjU0a4MVpoahAX7OQYHaJTWpPnXgK; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=FGLe4bNGDfW65ky6GBMPjVxiqm1es8fsWIgIuKb5; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -10145,10 +11145,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password_current"                data-endpoint="POSTapi-user-change"
-               value="enim"
+               value="rerum"
                data-component="body">
     <br>
-<p>Example: <code>enim</code></p>
+<p>Example: <code>rerum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -10156,10 +11156,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-user-change"
-               value="6uK@kKWl27L0Fvb3lt"
+               value="WyQ-BzF%M],/eYpUD;fG"
                data-component="body">
     <br>
-<p>This field is required when <code>password_confirmation</code> is present.  The value and <code>password_confirmation</code> must match. Must be at least 6 characters. Must not be greater than 15 characters. Example: <code>6uK@kKWl27L0Fvb3lt</code></p>
+<p>This field is required when <code>password_confirmation</code> is present.  The value and <code>password_confirmation</code> must match. Must be at least 6 characters. Must not be greater than 15 characters. Example: <code>WyQ-BzF%M],/eYpUD;fG</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password_confirmation</code></b>&nbsp;&nbsp;
@@ -10167,10 +11167,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password_confirmation"                data-endpoint="POSTapi-user-change"
-               value="abvckz"
+               value="lictgcnjpyocw"
                data-component="body">
     <br>
-<p>Must be at least 6 characters. Must not be greater than 15 characters. Example: <code>abvckz</code></p>
+<p>Must be at least 6 characters. Must not be greater than 15 characters. Example: <code>lictgcnjpyocw</code></p>
         </div>
         </form>
 
@@ -10255,7 +11255,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=UQZlse6T4ZgvNq8h2dc8hd4iSHOv7bsJkqFiz4i3; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=G28JfBSY7PDVqkCU2qNBzIw7CXoCoK1HvXYlbQqv; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -10359,7 +11359,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/user/profile/maxime" \
+    --get "http://127.0.0.1:8000/api/user/profile/laudantium" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -10367,7 +11367,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/user/profile/maxime"
+    "http://127.0.0.1:8000/api/user/profile/laudantium"
 );
 
 const headers = {
@@ -10384,7 +11384,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/user/profile/maxime';
+$url = 'http://127.0.0.1:8000/api/user/profile/laudantium';
 $response = $client-&gt;get(
     $url,
     [
@@ -10403,7 +11403,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/user/profile/maxime'
+url = 'http://127.0.0.1:8000/api/user/profile/laudantium'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -10426,7 +11426,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=lN4jWDVS9PfAo7wKWLxoJMC04u7vSyfgvdBVuAjA; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=P3F4LQIyHrTY0cfsxVoFmjEOzInJoawnb7vvOG9a; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -10521,10 +11521,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="GETapi-user-profile--id-"
-               value="maxime"
+               value="laudantium"
                data-component="url">
     <br>
-<p>The ID of the profile. Example: <code>maxime</code></p>
+<p>The ID of the profile. Example: <code>laudantium</code></p>
             </div>
                     </form>
 
@@ -10609,7 +11609,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=NuAQC5LJYSXVDod5q3OiD5huW5z8mJ6atPywBiSr; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=uuMPJXcZBwxbDwkskaC3F7YH3R8u2gOzeS6KX2Gu; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -10730,8 +11730,8 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"username\": \"sbrmfrzwhaorlrrzuesqzzda\",
-    \"email\": \"uswift@example.net\"
+    \"username\": \"odnlhxlaituwjjv\",
+    \"email\": \"rbode@example.net\"
 }"
 </code></pre></div>
 
@@ -10748,8 +11748,8 @@ const headers = {
 };
 
 let body = {
-    "username": "sbrmfrzwhaorlrrzuesqzzda",
-    "email": "uswift@example.net"
+    "username": "odnlhxlaituwjjv",
+    "email": "rbode@example.net"
 };
 
 fetch(url, {
@@ -10771,8 +11771,8 @@ $response = $client-&gt;put(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'username' =&gt; 'sbrmfrzwhaorlrrzuesqzzda',
-            'email' =&gt; 'uswift@example.net',
+            'username' =&gt; 'odnlhxlaituwjjv',
+            'email' =&gt; 'rbode@example.net',
         ],
     ]
 );
@@ -10786,8 +11786,8 @@ import json
 
 url = 'http://127.0.0.1:8000/api/user/1'
 payload = {
-    "username": "sbrmfrzwhaorlrrzuesqzzda",
-    "email": "uswift@example.net"
+    "username": "odnlhxlaituwjjv",
+    "email": "rbode@example.net"
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -10811,7 +11811,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=tJ9f9GR7SfZ0E7tFbsXt150es52QhZIaVF8zLn8v; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=dUSA9ETvkEbHWiItIFHmgpzJsWqfViLmWbLr4HWr; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -10918,10 +11918,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="username"                data-endpoint="PUTapi-user--id-"
-               value="sbrmfrzwhaorlrrzuesqzzda"
+               value="odnlhxlaituwjjv"
                data-component="body">
     <br>
-<p>Must be at least 2 characters. Must not be greater than 255 characters. Example: <code>sbrmfrzwhaorlrrzuesqzzda</code></p>
+<p>Must be at least 2 characters. Must not be greater than 255 characters. Example: <code>odnlhxlaituwjjv</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -10929,10 +11929,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="PUTapi-user--id-"
-               value="uswift@example.net"
+               value="rbode@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>uswift@example.net</code></p>
+<p>Must be a valid email address. Example: <code>rbode@example.net</code></p>
         </div>
         </form>
 
@@ -11017,7 +12017,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=43IPLF4NsvcOVx7GdCRWfBxchvsC8rWWGy1J1WGU; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=IGTohdtHiJTMS8bBkTXcggSN73AKD7UAp8vfcqg5; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -11142,11 +12142,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"userid\": 6566666.0211807,
-    \"title\": \"tempora\",
-    \"badge\": \"tempora\",
-    \"body\": \"mollitia\",
-    \"date\": \"2024-05-22T02:24:35\"
+    \"userid\": 4336649.742459,
+    \"title\": \"laboriosam\",
+    \"badge\": \"ea\",
+    \"body\": \"at\",
+    \"date\": \"2024-05-22T07:58:53\"
 }"
 </code></pre></div>
 
@@ -11163,11 +12163,11 @@ const headers = {
 };
 
 let body = {
-    "userid": 6566666.0211807,
-    "title": "tempora",
-    "badge": "tempora",
-    "body": "mollitia",
-    "date": "2024-05-22T02:24:35"
+    "userid": 4336649.742459,
+    "title": "laboriosam",
+    "badge": "ea",
+    "body": "at",
+    "date": "2024-05-22T07:58:53"
 };
 
 fetch(url, {
@@ -11189,11 +12189,11 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'userid' =&gt; 6566666.0211807,
-            'title' =&gt; 'tempora',
-            'badge' =&gt; 'tempora',
-            'body' =&gt; 'mollitia',
-            'date' =&gt; '2024-05-22T02:24:35',
+            'userid' =&gt; 4336649.742459,
+            'title' =&gt; 'laboriosam',
+            'badge' =&gt; 'ea',
+            'body' =&gt; 'at',
+            'date' =&gt; '2024-05-22T07:58:53',
         ],
     ]
 );
@@ -11207,11 +12207,11 @@ import json
 
 url = 'http://127.0.0.1:8000/api/note'
 payload = {
-    "userid": 6566666.0211807,
-    "title": "tempora",
-    "badge": "tempora",
-    "body": "mollitia",
-    "date": "2024-05-22T02:24:35"
+    "userid": 4336649.742459,
+    "title": "laboriosam",
+    "badge": "ea",
+    "body": "at",
+    "date": "2024-05-22T07:58:53"
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -11235,7 +12235,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=deWCtX28KIKPl59FSCdzjFrd2Vizp44kMW6Z16eW; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=CKV8Pwl0SsxKFglUD3EgvPNPTehwKgCfpJGQFuPM; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -11330,10 +12330,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="userid"                data-endpoint="POSTapi-note"
-               value="6566666.0211807"
+               value="4336649.742459"
                data-component="body">
     <br>
-<p>Example: <code>6566666.0211807</code></p>
+<p>Example: <code>4336649.742459</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>title</code></b>&nbsp;&nbsp;
@@ -11341,10 +12341,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="POSTapi-note"
-               value="tempora"
+               value="laboriosam"
                data-component="body">
     <br>
-<p>Example: <code>tempora</code></p>
+<p>Example: <code>laboriosam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>badge</code></b>&nbsp;&nbsp;
@@ -11352,10 +12352,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="badge"                data-endpoint="POSTapi-note"
-               value="tempora"
+               value="ea"
                data-component="body">
     <br>
-<p>Example: <code>tempora</code></p>
+<p>Example: <code>ea</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>body</code></b>&nbsp;&nbsp;
@@ -11363,10 +12363,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="body"                data-endpoint="POSTapi-note"
-               value="mollitia"
+               value="at"
                data-component="body">
     <br>
-<p>Example: <code>mollitia</code></p>
+<p>Example: <code>at</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>date</code></b>&nbsp;&nbsp;
@@ -11374,10 +12374,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="date"                data-endpoint="POSTapi-note"
-               value="2024-05-22T02:24:35"
+               value="2024-05-22T07:58:53"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2024-05-22T02:24:35</code></p>
+<p>Must be a valid date. Example: <code>2024-05-22T07:58:53</code></p>
         </div>
         </form>
 
@@ -11395,7 +12395,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/note/asperiores" \
+    --get "http://127.0.0.1:8000/api/note/aut" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -11403,7 +12403,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/note/asperiores"
+    "http://127.0.0.1:8000/api/note/aut"
 );
 
 const headers = {
@@ -11420,7 +12420,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/note/asperiores';
+$url = 'http://127.0.0.1:8000/api/note/aut';
 $response = $client-&gt;get(
     $url,
     [
@@ -11439,7 +12439,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/note/asperiores'
+url = 'http://127.0.0.1:8000/api/note/aut'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -11462,7 +12462,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=e5lagR9aSWeX66EqhuJPlYNnKxA0OKZ8GF7pFpcA; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=Sn0isIJ6wT3zkm71eqOPOmtqmlTCcA8rdq9s6EcE; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -11557,10 +12557,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="GETapi-note--id-"
-               value="asperiores"
+               value="aut"
                data-component="url">
     <br>
-<p>The ID of the note. Example: <code>asperiores</code></p>
+<p>The ID of the note. Example: <code>aut</code></p>
             </div>
                     </form>
 
@@ -11578,21 +12578,21 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://127.0.0.1:8000/api/note/nulla" \
+    "http://127.0.0.1:8000/api/note/aut" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"title\": \"voluptatum\",
-    \"badge\": \"omnis\",
-    \"body\": \"vero\"
+    \"title\": \"quia\",
+    \"badge\": \"mollitia\",
+    \"body\": \"optio\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/note/nulla"
+    "http://127.0.0.1:8000/api/note/aut"
 );
 
 const headers = {
@@ -11602,9 +12602,9 @@ const headers = {
 };
 
 let body = {
-    "title": "voluptatum",
-    "badge": "omnis",
-    "body": "vero"
+    "title": "quia",
+    "badge": "mollitia",
+    "body": "optio"
 };
 
 fetch(url, {
@@ -11616,7 +12616,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/note/nulla';
+$url = 'http://127.0.0.1:8000/api/note/aut';
 $response = $client-&gt;put(
     $url,
     [
@@ -11626,9 +12626,9 @@ $response = $client-&gt;put(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'title' =&gt; 'voluptatum',
-            'badge' =&gt; 'omnis',
-            'body' =&gt; 'vero',
+            'title' =&gt; 'quia',
+            'badge' =&gt; 'mollitia',
+            'body' =&gt; 'optio',
         ],
     ]
 );
@@ -11640,11 +12640,11 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/note/nulla'
+url = 'http://127.0.0.1:8000/api/note/aut'
 payload = {
-    "title": "voluptatum",
-    "badge": "omnis",
-    "body": "vero"
+    "title": "quia",
+    "badge": "mollitia",
+    "body": "optio"
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -11668,7 +12668,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=1AfSKgYNb3P9vx9YpaZSxy5Pwcrmp7G8h8aoNH7Y; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=xyblcbjNrsUBCfgSDZsAQi0WrX6WXaqnGquKWZ0a; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -11763,10 +12763,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="PUTapi-note--id-"
-               value="nulla"
+               value="aut"
                data-component="url">
     <br>
-<p>The ID of the note. Example: <code>nulla</code></p>
+<p>The ID of the note. Example: <code>aut</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -11775,10 +12775,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="title"                data-endpoint="PUTapi-note--id-"
-               value="voluptatum"
+               value="quia"
                data-component="body">
     <br>
-<p>Example: <code>voluptatum</code></p>
+<p>Example: <code>quia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>badge</code></b>&nbsp;&nbsp;
@@ -11786,10 +12786,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="badge"                data-endpoint="PUTapi-note--id-"
-               value="omnis"
+               value="mollitia"
                data-component="body">
     <br>
-<p>Example: <code>omnis</code></p>
+<p>Example: <code>mollitia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>body</code></b>&nbsp;&nbsp;
@@ -11797,10 +12797,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="body"                data-endpoint="PUTapi-note--id-"
-               value="vero"
+               value="optio"
                data-component="body">
     <br>
-<p>Example: <code>vero</code></p>
+<p>Example: <code>optio</code></p>
         </div>
         </form>
 
@@ -11818,7 +12818,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/api/note/soluta" \
+    "http://127.0.0.1:8000/api/note/nobis" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -11826,7 +12826,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/note/soluta"
+    "http://127.0.0.1:8000/api/note/nobis"
 );
 
 const headers = {
@@ -11843,7 +12843,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/note/soluta';
+$url = 'http://127.0.0.1:8000/api/note/nobis';
 $response = $client-&gt;delete(
     $url,
     [
@@ -11862,7 +12862,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/note/soluta'
+url = 'http://127.0.0.1:8000/api/note/nobis'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -11885,7 +12885,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=YICgaqNT7LjFLzmS5ijO0O5z2j37cpefhLvHS7iB; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=k01uUA4aNRLMoY7tok2modXoub9NWo1figHMBLqo; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -11980,10 +12980,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="DELETEapi-note--id-"
-               value="soluta"
+               value="nobis"
                data-component="url">
     <br>
-<p>The ID of the note. Example: <code>soluta</code></p>
+<p>The ID of the note. Example: <code>nobis</code></p>
             </div>
                     </form>
 
@@ -12072,7 +13072,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=YRtpPq7ecIwYMsZmH0EQWs4OkraBjrdQ67TSAUf4; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=Iow6Q76e0zsNlVkujaKWBHdYXD08L4dVXShTQmzS; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -12255,7 +13255,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=oSIAIBY0C2KegeZQ60YNnlz0ykoXqf3Non4vKqwC; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=g3zi7dWUUWeoJGoF9Q2aEUx6jYppUa77JE0oYgY2; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -12438,7 +13438,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=yakbPhg9JrPrDH12SP0H683eKbNRjflpMHWBqnHs; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=RZbun5fXmVAhvB70BWpPC8e16bruA46VGIgNYmFY; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -12621,7 +13621,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=CRcrZqumf2rv4YTOuLcemovwVn37REuMcY0bvNc7; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=vMiuUz6tFKeNqxCDE1OLFbhCXXmEKbA4VtGoK79d; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -12808,7 +13808,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=WwlNLLXDlFCcrpaMgQrFl2JY7XuKV02CFm7QfyPH; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=Oc4Y7yu9MWye2dd5BVN8flKgvM7xtKCof4Vu7ZWo; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -12917,16 +13917,16 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"userid\": 4685973.4045654,
-    \"firstname\": \"nihil\",
-    \"lastname\": \"tempore\",
-    \"middlename\": \"delectus\",
-    \"position\": \"totam\",
-    \"address\": \"quia\",
-    \"birthday\": \"2024-05-22T02:24:35\",
-    \"gender\": \"sunt\",
-    \"pay\": 1531.65,
-    \"phone\": \"qui\"
+    \"userid\": 15920.40515643,
+    \"firstname\": \"nemo\",
+    \"lastname\": \"deserunt\",
+    \"middlename\": \"possimus\",
+    \"position\": \"molestias\",
+    \"address\": \"sed\",
+    \"birthday\": \"2024-05-22T07:58:53\",
+    \"gender\": \"et\",
+    \"pay\": 7200.29,
+    \"phone\": \"nihil\"
 }"
 </code></pre></div>
 
@@ -12943,16 +13943,16 @@ const headers = {
 };
 
 let body = {
-    "userid": 4685973.4045654,
-    "firstname": "nihil",
-    "lastname": "tempore",
-    "middlename": "delectus",
-    "position": "totam",
-    "address": "quia",
-    "birthday": "2024-05-22T02:24:35",
-    "gender": "sunt",
-    "pay": 1531.65,
-    "phone": "qui"
+    "userid": 15920.40515643,
+    "firstname": "nemo",
+    "lastname": "deserunt",
+    "middlename": "possimus",
+    "position": "molestias",
+    "address": "sed",
+    "birthday": "2024-05-22T07:58:53",
+    "gender": "et",
+    "pay": 7200.29,
+    "phone": "nihil"
 };
 
 fetch(url, {
@@ -12974,16 +13974,16 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'userid' =&gt; 4685973.4045654,
-            'firstname' =&gt; 'nihil',
-            'lastname' =&gt; 'tempore',
-            'middlename' =&gt; 'delectus',
-            'position' =&gt; 'totam',
-            'address' =&gt; 'quia',
-            'birthday' =&gt; '2024-05-22T02:24:35',
-            'gender' =&gt; 'sunt',
-            'pay' =&gt; 1531.65,
-            'phone' =&gt; 'qui',
+            'userid' =&gt; 15920.40515643,
+            'firstname' =&gt; 'nemo',
+            'lastname' =&gt; 'deserunt',
+            'middlename' =&gt; 'possimus',
+            'position' =&gt; 'molestias',
+            'address' =&gt; 'sed',
+            'birthday' =&gt; '2024-05-22T07:58:53',
+            'gender' =&gt; 'et',
+            'pay' =&gt; 7200.29,
+            'phone' =&gt; 'nihil',
         ],
     ]
 );
@@ -12997,16 +13997,16 @@ import json
 
 url = 'http://127.0.0.1:8000/api/userprofile'
 payload = {
-    "userid": 4685973.4045654,
-    "firstname": "nihil",
-    "lastname": "tempore",
-    "middlename": "delectus",
-    "position": "totam",
-    "address": "quia",
-    "birthday": "2024-05-22T02:24:35",
-    "gender": "sunt",
-    "pay": 1531.65,
-    "phone": "qui"
+    "userid": 15920.40515643,
+    "firstname": "nemo",
+    "lastname": "deserunt",
+    "middlename": "possimus",
+    "position": "molestias",
+    "address": "sed",
+    "birthday": "2024-05-22T07:58:53",
+    "gender": "et",
+    "pay": 7200.29,
+    "phone": "nihil"
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -13030,7 +14030,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=hVsYEKKtAxHDZvlZDwzicPSBHCeICJ0WEWVNzwbf; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=zU9FuAgfvaJYSyue1qcizspehxRuCJKwz0iBxho3; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -13125,10 +14125,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="userid"                data-endpoint="POSTapi-userprofile"
-               value="4685973.4045654"
+               value="15920.40515643"
                data-component="body">
     <br>
-<p>Example: <code>4685973.4045654</code></p>
+<p>Example: <code>15920.40515643</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>firstname</code></b>&nbsp;&nbsp;
@@ -13136,10 +14136,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="firstname"                data-endpoint="POSTapi-userprofile"
-               value="nihil"
+               value="nemo"
                data-component="body">
     <br>
-<p>Example: <code>nihil</code></p>
+<p>Example: <code>nemo</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>lastname</code></b>&nbsp;&nbsp;
@@ -13147,10 +14147,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="lastname"                data-endpoint="POSTapi-userprofile"
-               value="tempore"
+               value="deserunt"
                data-component="body">
     <br>
-<p>Example: <code>tempore</code></p>
+<p>Example: <code>deserunt</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>middlename</code></b>&nbsp;&nbsp;
@@ -13158,10 +14158,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="middlename"                data-endpoint="POSTapi-userprofile"
-               value="delectus"
+               value="possimus"
                data-component="body">
     <br>
-<p>Example: <code>delectus</code></p>
+<p>Example: <code>possimus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>position</code></b>&nbsp;&nbsp;
@@ -13169,10 +14169,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="position"                data-endpoint="POSTapi-userprofile"
-               value="totam"
+               value="molestias"
                data-component="body">
     <br>
-<p>Example: <code>totam</code></p>
+<p>Example: <code>molestias</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -13180,10 +14180,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="POSTapi-userprofile"
-               value="quia"
+               value="sed"
                data-component="body">
     <br>
-<p>Example: <code>quia</code></p>
+<p>Example: <code>sed</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>birthday</code></b>&nbsp;&nbsp;
@@ -13191,10 +14191,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="birthday"                data-endpoint="POSTapi-userprofile"
-               value="2024-05-22T02:24:35"
+               value="2024-05-22T07:58:53"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2024-05-22T02:24:35</code></p>
+<p>Must be a valid date. Example: <code>2024-05-22T07:58:53</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
@@ -13202,10 +14202,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="gender"                data-endpoint="POSTapi-userprofile"
-               value="sunt"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>sunt</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>pay</code></b>&nbsp;&nbsp;
@@ -13213,10 +14213,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="pay"                data-endpoint="POSTapi-userprofile"
-               value="1531.65"
+               value="7200.29"
                data-component="body">
     <br>
-<p>Example: <code>1531.65</code></p>
+<p>Example: <code>7200.29</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -13224,10 +14224,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="phone"                data-endpoint="POSTapi-userprofile"
-               value="qui"
+               value="nihil"
                data-component="body">
     <br>
-<p>Example: <code>qui</code></p>
+<p>Example: <code>nihil</code></p>
         </div>
         </form>
 
@@ -13245,7 +14245,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://127.0.0.1:8000/api/userprofile/aut" \
+    --get "http://127.0.0.1:8000/api/userprofile/veritatis" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -13253,7 +14253,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/userprofile/aut"
+    "http://127.0.0.1:8000/api/userprofile/veritatis"
 );
 
 const headers = {
@@ -13270,7 +14270,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/userprofile/aut';
+$url = 'http://127.0.0.1:8000/api/userprofile/veritatis';
 $response = $client-&gt;get(
     $url,
     [
@@ -13289,7 +14289,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/userprofile/aut'
+url = 'http://127.0.0.1:8000/api/userprofile/veritatis'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -13312,7 +14312,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=72oRI7wv2nziDO7tPKvhBQkOGpPoAffMX8ufldPi; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=KLZppFCLq9wFD8FrRoLKiQDRXDwJOy15A2cAdBIf; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -13407,10 +14407,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="GETapi-userprofile--id-"
-               value="aut"
+               value="veritatis"
                data-component="url">
     <br>
-<p>The ID of the userprofile. Example: <code>aut</code></p>
+<p>The ID of the userprofile. Example: <code>veritatis</code></p>
             </div>
                     </form>
 
@@ -13428,27 +14428,27 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request PUT \
-    "http://127.0.0.1:8000/api/userprofile/quidem" \
+    "http://127.0.0.1:8000/api/userprofile/quis" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"firstname\": \"in\",
-    \"lastname\": \"voluptatem\",
-    \"middlename\": \"commodi\",
-    \"position\": \"eos\",
-    \"address\": \"temporibus\",
-    \"birthday\": \"2024-05-22T02:24:35\",
-    \"gender\": \"aut\",
-    \"pay\": 142998416.78303167,
-    \"phone\": \"alias\"
+    \"firstname\": \"quia\",
+    \"lastname\": \"rem\",
+    \"middlename\": \"repudiandae\",
+    \"position\": \"aut\",
+    \"address\": \"nostrum\",
+    \"birthday\": \"2024-05-22T07:58:53\",
+    \"gender\": \"non\",
+    \"pay\": 106938121.98119226,
+    \"phone\": \"ipsam\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/userprofile/quidem"
+    "http://127.0.0.1:8000/api/userprofile/quis"
 );
 
 const headers = {
@@ -13458,15 +14458,15 @@ const headers = {
 };
 
 let body = {
-    "firstname": "in",
-    "lastname": "voluptatem",
-    "middlename": "commodi",
-    "position": "eos",
-    "address": "temporibus",
-    "birthday": "2024-05-22T02:24:35",
-    "gender": "aut",
-    "pay": 142998416.78303167,
-    "phone": "alias"
+    "firstname": "quia",
+    "lastname": "rem",
+    "middlename": "repudiandae",
+    "position": "aut",
+    "address": "nostrum",
+    "birthday": "2024-05-22T07:58:53",
+    "gender": "non",
+    "pay": 106938121.98119226,
+    "phone": "ipsam"
 };
 
 fetch(url, {
@@ -13478,7 +14478,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/userprofile/quidem';
+$url = 'http://127.0.0.1:8000/api/userprofile/quis';
 $response = $client-&gt;put(
     $url,
     [
@@ -13488,15 +14488,15 @@ $response = $client-&gt;put(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'firstname' =&gt; 'in',
-            'lastname' =&gt; 'voluptatem',
-            'middlename' =&gt; 'commodi',
-            'position' =&gt; 'eos',
-            'address' =&gt; 'temporibus',
-            'birthday' =&gt; '2024-05-22T02:24:35',
-            'gender' =&gt; 'aut',
-            'pay' =&gt; 142998416.78303167,
-            'phone' =&gt; 'alias',
+            'firstname' =&gt; 'quia',
+            'lastname' =&gt; 'rem',
+            'middlename' =&gt; 'repudiandae',
+            'position' =&gt; 'aut',
+            'address' =&gt; 'nostrum',
+            'birthday' =&gt; '2024-05-22T07:58:53',
+            'gender' =&gt; 'non',
+            'pay' =&gt; 106938121.98119226,
+            'phone' =&gt; 'ipsam',
         ],
     ]
 );
@@ -13508,17 +14508,17 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/userprofile/quidem'
+url = 'http://127.0.0.1:8000/api/userprofile/quis'
 payload = {
-    "firstname": "in",
-    "lastname": "voluptatem",
-    "middlename": "commodi",
-    "position": "eos",
-    "address": "temporibus",
-    "birthday": "2024-05-22T02:24:35",
-    "gender": "aut",
-    "pay": 142998416.78303167,
-    "phone": "alias"
+    "firstname": "quia",
+    "lastname": "rem",
+    "middlename": "repudiandae",
+    "position": "aut",
+    "address": "nostrum",
+    "birthday": "2024-05-22T07:58:53",
+    "gender": "non",
+    "pay": 106938121.98119226,
+    "phone": "ipsam"
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -13542,7 +14542,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=PECYvdoZYdswQkGqVd4Mryt94ku8198eg0BHh7pb; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=mp6gMl9qkg0yDsznZccSnPuArwvj8d094F5h6HZg; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -13637,10 +14637,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="PUTapi-userprofile--id-"
-               value="quidem"
+               value="quis"
                data-component="url">
     <br>
-<p>The ID of the userprofile. Example: <code>quidem</code></p>
+<p>The ID of the userprofile. Example: <code>quis</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -13649,10 +14649,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="firstname"                data-endpoint="PUTapi-userprofile--id-"
-               value="in"
+               value="quia"
                data-component="body">
     <br>
-<p>Example: <code>in</code></p>
+<p>Example: <code>quia</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>lastname</code></b>&nbsp;&nbsp;
@@ -13660,10 +14660,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="lastname"                data-endpoint="PUTapi-userprofile--id-"
-               value="voluptatem"
+               value="rem"
                data-component="body">
     <br>
-<p>Example: <code>voluptatem</code></p>
+<p>Example: <code>rem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>middlename</code></b>&nbsp;&nbsp;
@@ -13671,10 +14671,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="middlename"                data-endpoint="PUTapi-userprofile--id-"
-               value="commodi"
+               value="repudiandae"
                data-component="body">
     <br>
-<p>Example: <code>commodi</code></p>
+<p>Example: <code>repudiandae</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>position</code></b>&nbsp;&nbsp;
@@ -13682,10 +14682,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="position"                data-endpoint="PUTapi-userprofile--id-"
-               value="eos"
+               value="aut"
                data-component="body">
     <br>
-<p>Example: <code>eos</code></p>
+<p>Example: <code>aut</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -13693,10 +14693,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="address"                data-endpoint="PUTapi-userprofile--id-"
-               value="temporibus"
+               value="nostrum"
                data-component="body">
     <br>
-<p>Example: <code>temporibus</code></p>
+<p>Example: <code>nostrum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>birthday</code></b>&nbsp;&nbsp;
@@ -13704,10 +14704,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="birthday"                data-endpoint="PUTapi-userprofile--id-"
-               value="2024-05-22T02:24:35"
+               value="2024-05-22T07:58:53"
                data-component="body">
     <br>
-<p>Must be a valid date. Example: <code>2024-05-22T02:24:35</code></p>
+<p>Must be a valid date. Example: <code>2024-05-22T07:58:53</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
@@ -13715,10 +14715,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="gender"                data-endpoint="PUTapi-userprofile--id-"
-               value="aut"
+               value="non"
                data-component="body">
     <br>
-<p>Example: <code>aut</code></p>
+<p>Example: <code>non</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>pay</code></b>&nbsp;&nbsp;
@@ -13726,10 +14726,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="pay"                data-endpoint="PUTapi-userprofile--id-"
-               value="142998416.78303"
+               value="106938121.98119"
                data-component="body">
     <br>
-<p>Example: <code>142998416.78303</code></p>
+<p>Example: <code>106938121.98119</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -13737,10 +14737,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="phone"                data-endpoint="PUTapi-userprofile--id-"
-               value="alias"
+               value="ipsam"
                data-component="body">
     <br>
-<p>Example: <code>alias</code></p>
+<p>Example: <code>ipsam</code></p>
         </div>
         </form>
 
@@ -13758,7 +14758,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request DELETE \
-    "http://127.0.0.1:8000/api/userprofile/est" \
+    "http://127.0.0.1:8000/api/userprofile/ut" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -13766,7 +14766,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://127.0.0.1:8000/api/userprofile/est"
+    "http://127.0.0.1:8000/api/userprofile/ut"
 );
 
 const headers = {
@@ -13783,7 +14783,7 @@ fetch(url, {
 
 <div class="php-example">
     <pre><code class="language-php">$client = new \GuzzleHttp\Client();
-$url = 'http://127.0.0.1:8000/api/userprofile/est';
+$url = 'http://127.0.0.1:8000/api/userprofile/ut';
 $response = $client-&gt;delete(
     $url,
     [
@@ -13802,7 +14802,7 @@ print_r(json_decode((string) $body));</code></pre></div>
     <pre><code class="language-python">import requests
 import json
 
-url = 'http://127.0.0.1:8000/api/userprofile/est'
+url = 'http://127.0.0.1:8000/api/userprofile/ut'
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
   'Content-Type': 'application/json',
@@ -13825,7 +14825,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=CvAFpHjBgmC2JlXUa01DNHTQYKeItjeY1sisFUMZ; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=JEnhz6YZynDSb5cK959OTCfdDSPk7ODrJ6kreWHB; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -13920,10 +14920,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="DELETEapi-userprofile--id-"
-               value="est"
+               value="ut"
                data-component="url">
     <br>
-<p>The ID of the userprofile. Example: <code>est</code></p>
+<p>The ID of the userprofile. Example: <code>ut</code></p>
             </div>
                     </form>
 
@@ -14012,7 +15012,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=z0o4JoPrQ1sIwp1LuL9YUIqNHQkNOrrpF1dKaW8W; expires=Wed, 22 May 2024 04:24:34 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=pjGIpS72F8A24M346YQHQCuS0K1O2JOfBfYYFfDu; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -14133,7 +15133,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"slug\": \"moxavil\"
+    \"slug\": \"gohpnsuqafy\"
 }"
 </code></pre></div>
 
@@ -14150,7 +15150,7 @@ const headers = {
 };
 
 let body = {
-    "slug": "moxavil"
+    "slug": "gohpnsuqafy"
 };
 
 fetch(url, {
@@ -14172,7 +15172,7 @@ $response = $client-&gt;post(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'slug' =&gt; 'moxavil',
+            'slug' =&gt; 'gohpnsuqafy',
         ],
     ]
 );
@@ -14186,7 +15186,7 @@ import json
 
 url = 'http://127.0.0.1:8000/api/user/1/role'
 payload = {
-    "slug": "moxavil"
+    "slug": "gohpnsuqafy"
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -14210,7 +15210,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=9nU4otOKDbhwVBJ6rP6ceVPVnsnzPSuasuobV2F0; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=cH9pP0WBm8zFMWa1xfpDIhgnjmLjrwTSn6nXstUS; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -14317,10 +15317,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="slug"                data-endpoint="POSTapi-user--user_id--role"
-               value="moxavil"
+               value="gohpnsuqafy"
                data-component="body">
     <br>
-<p>Must be at least 2 characters. Must not be greater than 100 characters. Example: <code>moxavil</code></p>
+<p>Must be at least 2 characters. Must not be greater than 100 characters. Example: <code>gohpnsuqafy</code></p>
         </div>
         </form>
 
@@ -14343,7 +15343,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"slug\": \"mzblumsyrl\"
+    \"slug\": \"rrbhxosjsvafyiwxl\"
 }"
 </code></pre></div>
 
@@ -14360,7 +15360,7 @@ const headers = {
 };
 
 let body = {
-    "slug": "mzblumsyrl"
+    "slug": "rrbhxosjsvafyiwxl"
 };
 
 fetch(url, {
@@ -14382,7 +15382,7 @@ $response = $client-&gt;put(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'slug' =&gt; 'mzblumsyrl',
+            'slug' =&gt; 'rrbhxosjsvafyiwxl',
         ],
     ]
 );
@@ -14396,7 +15396,7 @@ import json
 
 url = 'http://127.0.0.1:8000/api/user/1/role'
 payload = {
-    "slug": "mzblumsyrl"
+    "slug": "rrbhxosjsvafyiwxl"
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -14420,7 +15420,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=RzdZUtvhlLbbwujd2rhN3xCNULMt6HrzxfTzB0uz; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=UM6eutPg84GBuKzS58irmj9vfLCQTvprBxoDwNMX; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -14527,10 +15527,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="slug"                data-endpoint="PUTapi-user--user_id--role"
-               value="mzblumsyrl"
+               value="rrbhxosjsvafyiwxl"
                data-component="body">
     <br>
-<p>Must be at least 2 characters. Must not be greater than 20 characters. Example: <code>mzblumsyrl</code></p>
+<p>Must be at least 2 characters. Must not be greater than 20 characters. Example: <code>rrbhxosjsvafyiwxl</code></p>
         </div>
         </form>
 
@@ -14553,7 +15553,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"slug\": \"johhtwaumoufhd\"
+    \"slug\": \"xqeygzhdvmzgr\"
 }"
 </code></pre></div>
 
@@ -14570,7 +15570,7 @@ const headers = {
 };
 
 let body = {
-    "slug": "johhtwaumoufhd"
+    "slug": "xqeygzhdvmzgr"
 };
 
 fetch(url, {
@@ -14592,7 +15592,7 @@ $response = $client-&gt;delete(
             'Accept' =&gt; 'application/json',
         ],
         'json' =&gt; [
-            'slug' =&gt; 'johhtwaumoufhd',
+            'slug' =&gt; 'xqeygzhdvmzgr',
         ],
     ]
 );
@@ -14606,7 +15606,7 @@ import json
 
 url = 'http://127.0.0.1:8000/api/user/1/role'
 payload = {
-    "slug": "johhtwaumoufhd"
+    "slug": "xqeygzhdvmzgr"
 }
 headers = {
   'Authorization': 'Bearer {YOUR_AUTH_KEY}',
@@ -14630,7 +15630,7 @@ response.json()</code></pre></div>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
 access-control-allow-origin: *
-set-cookie: laravel_restful_api_session=l03sBJ5XSUSvD7q45JqRSoHbeofVcJiLCSXILDkH; expires=Wed, 22 May 2024 04:24:35 GMT; Max-Age=7200; path=/; httponly; samesite=lax
+set-cookie: laravel_restful_api_session=1byHPvplSIjb9BAq8rIOVBmSG7iWSqPj7yzuTStr; expires=Wed, 22 May 2024 09:58:53 GMT; Max-Age=7200; path=/; httponly; samesite=lax
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
@@ -14737,10 +15737,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="slug"                data-endpoint="DELETEapi-user--user_id--role"
-               value="johhtwaumoufhd"
+               value="xqeygzhdvmzgr"
                data-component="body">
     <br>
-<p>Must be at least 2 characters. Must not be greater than 100 characters. Example: <code>johhtwaumoufhd</code></p>
+<p>Must be at least 2 characters. Must not be greater than 100 characters. Example: <code>xqeygzhdvmzgr</code></p>
         </div>
         </form>
 
