@@ -24,6 +24,7 @@ use App\Http\Controllers\API\UserProfileController;
 use App\Http\Controllers\API\NoteController;
 use App\Http\Controllers\API\AccountsController;
 use App\Http\Controllers\API\ConsumerProfileController;
+use App\Http\Controllers\API\BillsController;
 
 Route::prefix('auth')
     ->middleware('throttle:60,1')
@@ -201,5 +202,23 @@ Route::prefix('consumers')
                 ->name('consumer.update');
             Route::delete('/',[ConsumerProfileController::class,'delete'])
                 ->name('consumer.delete');
+        });
+    });
+
+Route::prefix('bills')
+    ->middleware(['auth:api'])
+    ->group(function () {
+        Route::get('/',[BillsController::class,'index']);
+        Route::post('/',[BillsController::class,'store'])
+            ->name('bills.store');
+        Route::prefix('{bills}')->group(function () {
+            Route::get('/',[BillsController::class,'show'])
+                ->name('bills.show');
+            Route::get('/accounts',[BillsController::class,'showviaAcc'])
+                ->name('bills.accounts');
+            Route::put('/',[BillsController::class,'update'])
+                ->name('bills.update');
+            Route::delete('/',[BillsController::class,'destroy'])
+                ->name('bills.delete');
         });
     });

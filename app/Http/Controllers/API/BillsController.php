@@ -6,12 +6,12 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Bills;
 
-use App\Http\Requests\BIlls\ShowAllBillsRequest;
-use App\Http\Requests\BIlls\ShowBillsbyAccountRequest;
-use App\Http\Requests\BIlls\ShowBillRequest;
-use App\Http\Requests\BIlls\StoreBillRequest;
-use App\Http\Requests\BIlls\UpdateBillRequest;
-use App\Http\Requests\BIlls\DeleteBillRequest;
+use App\Http\Requests\Bills\ShowAllBillsRequest;
+use App\Http\Requests\Bills\ShowBillsbyAccountRequest;
+use App\Http\Requests\Bills\ShowBillRequest;
+use App\Http\Requests\Bills\StoreBillRequest;
+use App\Http\Requests\Bills\UpdateBillRequest;
+use App\Http\Requests\Bills\DeleteBillRequest;
 
 
 /**
@@ -63,7 +63,7 @@ class BillsController extends Controller
 
      public function showviaAcc(ShowBillsbyAccountRequest $request, int $accountid) {
         $bills = new Bills;
-        $bills = Bills::where('accout_id', $accountid)->get();
+        $bills = Bills::where('account_id', $accountid)->get();
         return response()->success($bills);
     }
 

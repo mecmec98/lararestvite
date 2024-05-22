@@ -5,7 +5,7 @@ namespace App\Http\Requests\Bills;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
 
-class ShowBillsRequest extends FormRequest
+class ShowAllBillsRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
