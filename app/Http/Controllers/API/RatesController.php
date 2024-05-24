@@ -61,8 +61,14 @@ class RatesController extends Controller
     public function store(StoreRateRequest $request) {
         $rates = new Rates;
         $rates->rate_name = $request->ratename;
+        $rates->meter_size = $request->metersize;
         $rates->rate_value = $request->ratevalue;
         $rates->rate_minimum = $request->rateminimum;
+        $rates->cc_a = $request->cca;
+        $rates->cc_b = $request->ccb;
+        $rates->cc_c = $request->ccc;
+        $rates->cc_d = $request->ccd;
+
         $rates->save();
         return response()->success($rates);
     }
@@ -82,8 +88,14 @@ class RatesController extends Controller
         $rates = Rates::where('id', $rateid)->first();
 
         $rates->rate_name = $request->ratename;
+        $rates->meter_size = $request->metersize;
         $rates->rate_value = $request->ratevalue;
         $rates->rate_minimum = $request->rateminimum;
+        $rates->cc_a = $request->cca;
+        $rates->cc_b = $request->ccb;
+        $rates->cc_c = $request->ccc;
+        $rates->cc_d = $request->ccd;
+        
         $rates->save();
         return response()->success($rates);
     }

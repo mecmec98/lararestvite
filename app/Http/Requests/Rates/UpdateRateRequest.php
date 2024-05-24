@@ -26,6 +26,10 @@ class UpdateRateRequest extends FormRequest
             "ratename"      => ["required","string"],
             "ratevalue"     => ["required","numeric"],
             "rateminimum"   => ["required","numeric"],
+            "cca"           => ["required","numeric"],
+            "ccb"           => ["required","numeric"],
+            "ccc"           => ["required","numeric"],
+            "ccd"           => ["required","numeric"],
         ];
     }
 }

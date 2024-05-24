@@ -27,6 +27,7 @@ use App\Http\Controllers\API\ConsumerProfileController;
 use App\Http\Controllers\API\BillsController;
 use App\Http\Controllers\API\RatesController;
 use App\Http\Controllers\API\DiscountsController;
+use App\Http\Controllers\API\MiscFeeController;
 
 Route::prefix('auth')
     ->middleware('throttle:60,1')
@@ -255,5 +256,23 @@ Route::prefix('discounts')
                 ->name('discount.update');
             Route::delete('/',[DiscountsController::class,'destroy'])
                 ->name('discount.delete');
+        });
+    });
+
+Route::prefix('miscfees')
+    ->middleware(['auth:api'])
+    ->group(function () {
+        Route::get('/',[MiscFeeController::class, 'index']);
+        Route::post('/',[MiscFeeController::class, 'store'])
+            ->name('miscfee.store');
+        Route::prefix('{miscfee}')->group(function () {
+            Route::get('/',[MiscFeeController::class, 'show'])
+                ->name('miscfee.show');
+            Route::put('/',[MiscFeeController::class, 'update'])
+                ->name('miscfee.update');
+            Route::patch('/',[MiscFeeController::class, 'activetoggle'])
+                ->name('miscfee.activate');
+            Route::delete('/',[MiscFeeController::class, 'destroy'])
+                ->name('miscfee.delete');
         });
     });

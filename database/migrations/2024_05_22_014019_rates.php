@@ -15,8 +15,14 @@ return new class extends Migration
         Schema::connection('billingDB')->create('rates', function (BluePrint $table) {
             $table->bigIncrements('id');
             $table->string('rate_name');
+            $table->string('meter_size');
             $table->decimal('rate_value');
             $table->integer('rate_minimum');
+            
+            $table->decimal('cc_a');
+            $table->decimal('cc_b');
+            $table->decimal('cc_c');
+            $table->decimal('cc_d');
 
             $table->timestamps();
         });

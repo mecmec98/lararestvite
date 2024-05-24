@@ -38,7 +38,7 @@ class BillsController extends Controller
     /**
      * Show One Bill via ID
      * 
-     * This endpoint allows you to show a specific account by bills id
+     * This endpoint allows you to show a specific bill by bills id
      *
      * @authenticated
      * @param ShowBillRequest $request
@@ -54,7 +54,7 @@ class BillsController extends Controller
     /**
      * Show All Bills via Accounts ID
      * 
-     * This endpoint allows you to show a specific account by bills id
+     * This endpoint allows you to show a specific bills by bills id
      *
      * @authenticated
      * @param ShowBillsbyAccountRequest $request
