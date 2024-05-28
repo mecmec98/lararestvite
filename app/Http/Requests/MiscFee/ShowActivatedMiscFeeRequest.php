@@ -5,7 +5,7 @@ namespace App\Http\Requests\MiscFee;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Auth;
 
-class StoreMiscFeeRequest extends FormRequest
+class ShowActivatedMiscFeeRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,10 +23,7 @@ class StoreMiscFeeRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "miscname"      => ["required","string"],
-            "miscvalue"     => ["required","numeric"],
-            "description"   => ["nullable","string"],
-            "activate"      => ["nullable","boolean"],
+            //
         ];
     }
 }

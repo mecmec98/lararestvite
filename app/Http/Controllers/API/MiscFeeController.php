@@ -12,6 +12,7 @@ use App\Http\Requests\MiscFee\StoreMiscFeeRequest;
 use App\Http\Requests\MiscFee\UpdateMiscFeeRequest;
 use App\Http\Requests\MiscFee\DeleteMiscFeeRequest;
 use App\Http\Requests\MiscFee\ToggleMiscFeeRequest;
+use App\Http\Requests\MiscFee\ShowActivatedMiscFeeRequest;
 
 
 /**
@@ -63,8 +64,9 @@ class MiscFeeController extends Controller
     public function store(StoreMiscFeeRequest $request) {
         $miscfees = new MiscFee;
         $miscfees->misc_name = $request->miscname;
-        $miscfees->fee_value = $request->feevalue;
-        $miscfees->activate = $request->activate;
+        $miscfees->fee_value = $request->miscvalue;
+        $miscfees->description = $request->description;
+        $miscfees->activate = false;
         $miscfees->save();
         return response()->success($miscfees);
     }
@@ -85,7 +87,26 @@ class MiscFeeController extends Controller
 
         $miscfees->misc_name = $request->miscname;
         $miscfees->fee_value = $request->miscvalue;
+        $miscfees->description = $request->description;
+       
         $miscfees->save();
+        return response()->success($miscfees);
+    }
+
+    /**
+     * Show All activated Misc Fee
+     * 
+     * This endpoint allows you to show all activated misc fee
+     *
+     * @authenticated
+     * @param ActivatedMiscFeeRequest $request
+     * @return JsonResponse
+     */
+    public function showActivated(ShowActivatedMiscFeeRequest $request) {
+        $miscfees = new MiscFee;
+        $activation = true;
+        $miscfees = MiscFee::where('activate', $activation)->get();
+        
         return response()->success($miscfees);
     }
 

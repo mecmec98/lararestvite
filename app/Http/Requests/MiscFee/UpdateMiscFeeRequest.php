@@ -25,6 +25,7 @@ class UpdateMiscFeeRequest extends FormRequest
         return [
             "miscname"      => ["required","string"],
             "miscvalue"     => ["required","numeric"],
+            "description"     => ["nullable","string"],
         ];
     }
 }

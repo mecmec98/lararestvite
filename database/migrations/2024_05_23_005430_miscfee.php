@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::connection('billingDB')->dropIfExists('miscfee');
         Schema::connection('billingDB')->create('miscfee', function (BluePrint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('misc_name');
+            $table->string('misc_name');
             $table->unsignedBigInteger('fee_value');
+            $table->string('description');
             $table->boolean('activate')->default(false);
             
             $table->timestamps();
@@ -30,3 +31,4 @@ return new class extends Migration
         Schema::dropIfExists('miscfee');
     }
 };
+ 

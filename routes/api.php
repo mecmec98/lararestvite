@@ -265,6 +265,8 @@ Route::prefix('miscfees')
         Route::get('/',[MiscFeeController::class, 'index']);
         Route::post('/',[MiscFeeController::class, 'store'])
             ->name('miscfee.store');
+        Route::get('/activate',[MiscFeeController::class, 'showActivated'])
+            ->name('miscfee.showactivated');
         Route::prefix('{miscfee}')->group(function () {
             Route::get('/',[MiscFeeController::class, 'show'])
                 ->name('miscfee.show');
