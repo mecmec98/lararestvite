@@ -26,6 +26,7 @@ class UpdateBillRequest extends FormRequest
         return [
             "accountid"         => ["required","numeric"],
             "meterreading"      => ["required","numeric"],
+            "currentreading"      => ["required","numeric"],
         ];
     }
 }

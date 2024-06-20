@@ -16,7 +16,8 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->unsignedBigInteger('account_id');
             $table->foreign('account_id')->references('id')->on('accounts')->onDelete('CASCADE');
-            $table->unsignedBigInteger('meter_reading');  
+            $table->unsignedBigInteger('current_reading');  
+            $table->unsignedBigInteger('past_reading');  
 
             $table->timestamps();
         });

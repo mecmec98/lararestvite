@@ -215,11 +215,11 @@ Route::prefix('bills')
         Route::get('/',[BillsController::class,'index']);
         Route::post('/',[BillsController::class,'store'])
             ->name('bills.store');
+        Route::get('/accounts/{bills}',[BillsController::class,'showviaAcc'])
+            ->name('bills.accounts');
         Route::prefix('{bills}')->group(function () {
             Route::get('/',[BillsController::class,'show'])
                 ->name('bills.show');
-            Route::get('/accounts',[BillsController::class,'showviaAcc'])
-                ->name('bills.accounts');
             Route::put('/',[BillsController::class,'update'])
                 ->name('bills.update');
             Route::delete('/',[BillsController::class,'destroy'])

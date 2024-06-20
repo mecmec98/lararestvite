@@ -80,7 +80,8 @@ class BillsController extends Controller
     public function store(StoreBillRequest $request) {
         $bills = new Bills;
         $bills->account_id = $request->accountid;
-        $bills->meter_reading = $request->meterreading;
+        $bills->current_reading = $request->currentreading;
+        $bills->past_reading = $request->pastreading;
         $bills->save();
         return response()->success($bills);
     }
@@ -99,7 +100,9 @@ class BillsController extends Controller
         $bills = new Bills;
         $bills = Bills::where('id', $billid)->first();
         
-        $bills->meter_reading = $request->meterreading;
+        $bills->account_id = $request->accountid;
+        $bills->current_reading = $request->currentreading;
+        $bills->past_reading = $request->pastreading;
         $bills->save();
         return response()->success($bills);
     }
