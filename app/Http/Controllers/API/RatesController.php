@@ -64,6 +64,7 @@ class RatesController extends Controller
         $rates->meter_size = $request->metersize;
         $rates->rate_value = $request->ratevalue;
         $rates->rate_minimum = $request->rateminimum;
+        //commodity charge
         $rates->cc_a = $request->cca;
         $rates->cc_b = $request->ccb;
         $rates->cc_c = $request->ccc;

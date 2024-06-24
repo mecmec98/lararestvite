@@ -24,6 +24,7 @@ class StoreRateRequest extends FormRequest
     {
         return [
             "ratename"      => ["required","string"],
+            "metersize"     => ["required","string"],
             "ratevalue"     => ["required","numeric"],
             "rateminimum"   => ["required","numeric"],
             "cca"           => ["required","numeric"],
