@@ -26,6 +26,7 @@ class StoreConsumerRequest extends FormRequest
             "firstname"     => ["required","string"],
             "middlename"    => ["required","string"],
             "lastname"      => ["required","string"],
+            "gender"        => ["required","string"],
             "address"       => ["required","string"],
             "phonenumber"   => ["required","string"],
         ];

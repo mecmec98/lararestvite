@@ -23,11 +23,12 @@ class UpdateConsumerRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "firstname"     =>["required","string"],
-            "middlename"    =>["required","string"],
-            "lastname"      =>["required","string"],
-            "address"       =>["required","string"],
-            "phonenumber"   =>["required","string"],
+            "firstname"     => ["required","string"],
+            "middlename"    => ["required","string"],
+            "lastname"      => ["required","string"],
+            "gender"        => ["required","string"],
+            "address"       => ["required","string"],
+            "phonenumber"   => ["required","string"],
         ];
     }
 }

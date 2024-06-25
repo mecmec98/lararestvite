@@ -64,6 +64,7 @@ class ConsumerProfileController extends Controller
         $consumers->firstname = $request->firstname;
         $consumers->middlename = $request->middlename;
         $consumers->lastname = $request->lastname;
+        $consumers->gender = $request->gender;
         $consumers->address = $request->address;
         $consumers->phonenumber = $request->phonenumber;
         $consumers->save();
@@ -87,6 +88,7 @@ class ConsumerProfileController extends Controller
         $consumers->firstname = $request->firstname;
         $consumers->middlename = $request->middlename;
         $consumers->lastname = $request->lastname;
+        $consumers->gender = $request->gender;
         $consumers->address = $request->address;
         $consumers->phonenumber = $request->phonenumber;
         $consumers->save();
