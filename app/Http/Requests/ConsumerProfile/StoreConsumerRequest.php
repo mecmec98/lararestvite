@@ -27,7 +27,14 @@ class StoreConsumerRequest extends FormRequest
             "middlename"    => ["required","string"],
             "lastname"      => ["required","string"],
             "gender"        => ["required","string"],
-            "address"       => ["required","string"],
+            
+            "street"        => ["required","string"],
+            "building"      => ["nullable","string"],
+            "barangay"      => ["required","string"],
+            "city"          => ["required","string"],
+            "region"        => ["required","string"],
+            "zipcode"       => ["required","string"],
+
             "phonenumber"   => ["required","string"],
         ];
     }

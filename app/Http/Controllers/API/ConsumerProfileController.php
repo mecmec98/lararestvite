@@ -65,7 +65,14 @@ class ConsumerProfileController extends Controller
         $consumers->middlename = $request->middlename;
         $consumers->lastname = $request->lastname;
         $consumers->gender = $request->gender;
-        $consumers->address = $request->address;
+        //address
+        $consumers->street= $request->street;
+        $consumers->building = $request->building;
+        $consumers->barangay = $request->barangay;
+        $consumers->city = $request->city;
+        $consumers->region = $request->region;
+        $consumers->zipcode = $request->zipcode;
+        
         $consumers->phonenumber = $request->phonenumber;
         $consumers->save();
         return response()->success($consumers);
@@ -89,7 +96,14 @@ class ConsumerProfileController extends Controller
         $consumers->middlename = $request->middlename;
         $consumers->lastname = $request->lastname;
         $consumers->gender = $request->gender;
-        $consumers->address = $request->address;
+        //address
+        $consumers->street= $request->street;
+        $consumers->building = $request->building;
+        $consumers->barangay = $request->barangay;
+        $consumers->city = $request->city;
+        $consumers->region = $request->region;
+        $consumers->zipcode = $request->zipcode;
+
         $consumers->phonenumber = $request->phonenumber;
         $consumers->save();
         return response()->success($consumers);

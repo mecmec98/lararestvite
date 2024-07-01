@@ -20,7 +20,15 @@ return new class extends Migration
             $table->string('middlename');
             $table->string('lastname');
             $table->string('gender');
-            $table->string('address');
+            
+            //address
+            $table->string('street');
+            $table->string('building')->nullable();
+            $table->string('barangay');
+            $table->string('city');
+            $table->string('region');
+            $table->string('zipcode');
+
             $table->string('phonenumber');
             
             $table->timestamps();
