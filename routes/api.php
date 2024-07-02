@@ -28,6 +28,7 @@ use App\Http\Controllers\API\BillsController;
 use App\Http\Controllers\API\RatesController;
 use App\Http\Controllers\API\DiscountsController;
 use App\Http\Controllers\API\MiscFeeController;
+use App\Http\Controllers\API\DapitanAddressController;
 
 Route::prefix('auth')
     ->middleware('throttle:60,1')
@@ -277,4 +278,10 @@ Route::prefix('miscfees')
             Route::delete('/',[MiscFeeController::class, 'destroy'])
                 ->name('miscfee.delete');
         });
+    });
+
+Route::prefix('dapaddress')
+    ->middleware(['throttle:60,1'])
+    ->group(function() {
+        Route::get('/',[DapitanAddressController::class, 'index']);
     });
