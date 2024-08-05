@@ -16,6 +16,7 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->string('discount_name');
             $table->decimal('discount_value');
+            $table->string('discount_desc');
 
             $table->timestamps();
         });

@@ -25,6 +25,7 @@ class UpdateDiscountRequest extends FormRequest
         return [
             "discountname"      => ["required","string"],
             "discountvalue"     => ["required","numeric"],
+            "discountdesc"      => ["required","string"],
         ];
     }
 }

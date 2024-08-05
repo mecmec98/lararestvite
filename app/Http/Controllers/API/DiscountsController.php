@@ -63,6 +63,7 @@ class DiscountsController extends Controller
         $discounts = new Discounts;
         $discounts->discount_name = $request->discountname;
         $discounts->discount_value = $request->discountvalue;
+        $discounts->discount_desc = $request->discountdesc;
         $discounts->save();
         return response()->success($discounts);
     }
@@ -83,6 +84,7 @@ class DiscountsController extends Controller
 
         $discounts->discount_name = $request->discountname;
         $discounts->discount_value = $request->discountvalue;
+        $discounts->discount_desc = $request->discountdesc;
         $discounts->save();
         return response()->success($discounts);
     }
