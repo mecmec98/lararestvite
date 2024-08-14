@@ -62,7 +62,7 @@ class RatesController extends Controller
         $rates = new Rates;
         $rates->rate_name = $request->ratename;
         $rates->meter_size = $request->metersize;
-        $rates->rate_value = $request->ratevalue;
+        $rates->rate_desc = $request->ratedesc;
         $rates->rate_minimum = $request->rateminimum;
         //commodity charge
         $rates->cc_a = $request->cca;
@@ -90,7 +90,7 @@ class RatesController extends Controller
 
         $rates->rate_name = $request->ratename;
         $rates->meter_size = $request->metersize;
-        $rates->rate_value = $request->ratevalue;
+        $rates->rate_desc = $request->ratedesc;
         $rates->rate_minimum = $request->rateminimum;
         $rates->cc_a = $request->cca;
         $rates->cc_b = $request->ccb;

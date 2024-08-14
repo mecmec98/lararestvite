@@ -25,7 +25,7 @@ class UpdateRateRequest extends FormRequest
         return [
             "ratename"      => ["required","string"],
             "metersize"     => ["required","string"],
-            "ratevalue"     => ["required","numeric"],
+            "ratedesc"      => ["required","string"],
             "rateminimum"   => ["required","numeric"],
             "cca"           => ["required","numeric"],
             "ccb"           => ["required","numeric"],

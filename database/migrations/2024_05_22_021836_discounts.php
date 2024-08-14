@@ -15,7 +15,7 @@ return new class extends Migration
         Schema::connection('billingDB')->create('discounts', function (BluePrint $table) {
             $table->bigIncrements('id');
             $table->string('discount_name');
-            $table->decimal('discount_value');
+            $table->integer('discount_value');
             $table->string('discount_desc');
 
             $table->timestamps();

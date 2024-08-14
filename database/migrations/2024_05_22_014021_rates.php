@@ -16,13 +16,13 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->string('rate_name');
             $table->string('meter_size');
-            $table->decimal('rate_value');
+            $table->string('rate_desc');
             $table->integer('rate_minimum');
             
-            $table->decimal('cc_a');
-            $table->decimal('cc_b');
-            $table->decimal('cc_c');
-            $table->decimal('cc_d');
+            $table->integer('cc_a');
+            $table->integer('cc_b');
+            $table->integer('cc_c');
+            $table->integer('cc_d');
 
             $table->timestamps();
         });
